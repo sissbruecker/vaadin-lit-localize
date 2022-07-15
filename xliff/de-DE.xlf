@@ -1,0 +1,155 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xliff version="1.2" xmlns="urn:oasis:names:tc:xliff:document:1.2">
+<file target-language="de-DE" source-language="en" original="lit-localize-inputs" datatype="plaintext">
+<body>
+<trans-unit id="vaadin-date-picker.monthNames.January">
+  <source>January</source>
+  <target>Januar</target>
+</trans-unit>
+<trans-unit id="vaadin-date-picker.monthNames.February">
+  <source>February</source>
+  <target>Februar</target>
+</trans-unit>
+<trans-unit id="vaadin-date-picker.monthNames.March">
+  <source>March</source>
+  <target>März</target>
+</trans-unit>
+<trans-unit id="vaadin-date-picker.monthNames.April">
+  <source>April</source>
+  <target>April</target>
+</trans-unit>
+<trans-unit id="vaadin-date-picker.monthNames.May">
+  <source>May</source>
+  <target>Mai</target>
+</trans-unit>
+<trans-unit id="vaadin-date-picker.monthNames.June">
+  <source>June</source>
+  <target>Juni</target>
+</trans-unit>
+<trans-unit id="vaadin-date-picker.monthNames.July">
+  <source>July</source>
+  <target>Juli</target>
+</trans-unit>
+<trans-unit id="vaadin-date-picker.monthNames.August">
+  <source>August</source>
+  <target>August</target>
+</trans-unit>
+<trans-unit id="vaadin-date-picker.monthNames.September">
+  <source>September</source>
+  <target>September</target>
+</trans-unit>
+<trans-unit id="vaadin-date-picker.monthNames.October">
+  <source>October</source>
+  <target>Oktober</target>
+</trans-unit>
+<trans-unit id="vaadin-date-picker.monthNames.November">
+  <source>November</source>
+  <target>November</target>
+</trans-unit>
+<trans-unit id="vaadin-date-picker.monthNames.December">
+  <source>December</source>
+  <target>Dezember</target>
+</trans-unit>
+<trans-unit id="vaadin-date-picker.weekdays.Sunday">
+  <source>Sunday</source>
+  <target>Sonntag</target>
+</trans-unit>
+<trans-unit id="vaadin-date-picker.weekdays.Monday">
+  <source>Monday</source>
+  <target>Montag</target>
+</trans-unit>
+<trans-unit id="vaadin-date-picker.weekdays.Tuesday">
+  <source>Tuesday</source>
+  <target>Dienstag</target>
+</trans-unit>
+<trans-unit id="vaadin-date-picker.weekdays.Wednesday">
+  <source>Wednesday</source>
+  <target>Mittwoch</target>
+</trans-unit>
+<trans-unit id="vaadin-date-picker.weekdays.Thursday">
+  <source>Thursday</source>
+  <target>Donnerstag</target>
+</trans-unit>
+<trans-unit id="vaadin-date-picker.weekdays.Friday">
+  <source>Friday</source>
+  <target>Freitag</target>
+</trans-unit>
+<trans-unit id="vaadin-date-picker.weekdays.Saturday">
+  <source>Saturday</source>
+  <target>Samstag</target>
+</trans-unit>
+<trans-unit id="vaadin-date-picker.weekdaysShort.Sun">
+  <source>Sun</source>
+  <target>So</target>
+</trans-unit>
+<trans-unit id="vaadin-date-picker.weekdaysShort.Mon">
+  <source>Mon</source>
+  <target>Mo</target>
+</trans-unit>
+<trans-unit id="vaadin-date-picker.weekdaysShort.Tue">
+  <source>Tue</source>
+  <target>Di</target>
+</trans-unit>
+<trans-unit id="vaadin-date-picker.weekdaysShort.Wed">
+  <source>Wed</source>
+  <target>Mi</target>
+</trans-unit>
+<trans-unit id="vaadin-date-picker.weekdaysShort.Thu">
+  <source>Thu</source>
+  <target>Do</target>
+</trans-unit>
+<trans-unit id="vaadin-date-picker.weekdaysShort.Fri">
+  <source>Fri</source>
+  <target>Fr</target>
+</trans-unit>
+<trans-unit id="vaadin-date-picker.weekdaysShort.Sat">
+  <source>Sat</source>
+  <target>Sa</target>
+</trans-unit>
+<trans-unit id="vaadin-date-picker.week.Week">
+  <source>Week</source>
+  <target>Woche</target>
+</trans-unit>
+<trans-unit id="vaadin-date-picker.calendar.Calendar">
+  <source>Calendar</source>
+  <target>Kalender</target>
+</trans-unit>
+<trans-unit id="vaadin-date-picker.today.Today">
+  <source>Today</source>
+  <target>Heute</target>
+</trans-unit>
+<trans-unit id="vaadin-date-picker.cancel.Cancel">
+  <source>Cancel</source>
+  <target>Abbrechen</target>
+</trans-unit>
+<trans-unit id="vaadin-login.form.title.Log in">
+  <source>Log in</source>
+  <target>Login</target>
+</trans-unit>
+<trans-unit id="vaadin-login.form.username.Username">
+  <source>Username</source>
+  <target>Benutzername</target>
+</trans-unit>
+<trans-unit id="vaadin-login.form.password.Password">
+  <source>Password</source>
+  <target>Passwort</target>
+</trans-unit>
+<trans-unit id="vaadin-login.form.submit.Log in">
+  <source>Log in</source>
+  <target>Anmelden</target>
+</trans-unit>
+<trans-unit id="vaadin-login.form.forgotPassword.Forgot password">
+  <source>Forgot password</source>
+  <target>Passwort vergessen?</target>
+</trans-unit>
+<trans-unit id="vaadin-login.errorMessage.title.Incorrect username or password">
+  <source>Incorrect username or password</source>
+  <target>Benutzername oder Passwort sind nicht korrekt</target>
+</trans-unit>
+<trans-unit id="vaadin-login.errorMessage.message.Check that you have entered the correct username and password and try again.">
+  <source>Check that you have entered the correct username and password and try again.</source>
+  <target>Bitte prüfe ob Du den Benutzernamen oder das Passwort korrekt eingegeben hast</target>
+</trans-unit>
+</body>
+</file>
+</xliff>
