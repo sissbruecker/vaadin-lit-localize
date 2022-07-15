@@ -433,6 +433,18 @@
     "@vaadin/vaadin-lumo-styles" "^23.1.4"
     "@vaadin/vaadin-material-styles" "^23.1.4"
 
+"@vaadin/progress-bar@^23.1.4":
+  version "23.1.4"
+  resolved "https://registry.yarnpkg.com/@vaadin/progress-bar/-/progress-bar-23.1.4.tgz#dc788b1f7d5766a85afcfc0bf2ff19bc6b949572"
+  integrity sha512-GSCgUE0Kuv2+yxS/W0zxX7H6IEaGeFbwwHjV/GCopnrVLVv1DucfyAa0vSqmBucs+0Nu25Cx893V+BNL/dqmmw==
+  dependencies:
+    "@open-wc/dedupe-mixin" "^1.3.0"
+    "@polymer/polymer" "^3.0.0"
+    "@vaadin/component-base" "^23.1.4"
+    "@vaadin/vaadin-lumo-styles" "^23.1.4"
+    "@vaadin/vaadin-material-styles" "^23.1.4"
+    "@vaadin/vaadin-themable-mixin" "^23.1.4"
+
 "@vaadin/select@^23.1.4":
   version "23.1.4"
   resolved "https://registry.yarnpkg.com/@vaadin/select/-/select-23.1.4.tgz#e577485e37e47e4144ea40e1e98b0536e5dd65c9"
@@ -461,6 +473,19 @@
     "@vaadin/component-base" "^23.1.4"
     "@vaadin/field-base" "^23.1.4"
     "@vaadin/input-container" "^23.1.4"
+    "@vaadin/vaadin-lumo-styles" "^23.1.4"
+    "@vaadin/vaadin-material-styles" "^23.1.4"
+    "@vaadin/vaadin-themable-mixin" "^23.1.4"
+
+"@vaadin/upload@^23.1.4":
+  version "23.1.4"
+  resolved "https://registry.yarnpkg.com/@vaadin/upload/-/upload-23.1.4.tgz#fbaf09d93c367489984d574c1373523a1b4034fb"
+  integrity sha512-nfUVRYnRJAYgmQgTH+gt6PbrJrVXAWmRmSmPcQ4/pYtQQvjVlGj8pQeDlHpuPbudHrDxV6fOWDzKsuZV/MhoMA==
+  dependencies:
+    "@polymer/polymer" "^3.0.0"
+    "@vaadin/button" "^23.1.4"
+    "@vaadin/component-base" "^23.1.4"
+    "@vaadin/progress-bar" "^23.1.4"
     "@vaadin/vaadin-lumo-styles" "^23.1.4"
     "@vaadin/vaadin-material-styles" "^23.1.4"
     "@vaadin/vaadin-themable-mixin" "^23.1.4"

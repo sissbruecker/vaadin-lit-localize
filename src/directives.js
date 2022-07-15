@@ -135,3 +135,60 @@ export class LoginFormDirective extends LocalizeDirective {
 }
 
 export const localizeLogin = directive(LoginFormDirective);
+
+export class UploadDirective extends LocalizeDirective {
+  getLocalization() {
+    return {
+  dropFiles: {
+    one: msg('Drop file here', { id: 'vaadin-upload.dropFiles.one.Drop file here' }),
+    many: msg('Drop files here', { id: 'vaadin-upload.dropFiles.many.Drop files here' })
+  },
+  addFiles: {
+    one: msg('Upload File...', { id: 'vaadin-upload.addFiles.one.Upload File...' }),
+    many: msg('Upload Files...', { id: 'vaadin-upload.addFiles.many.Upload Files...' })
+  },
+  error: {
+    tooManyFiles: msg('Too Many Files.', { id: 'vaadin-upload.error.tooManyFiles.Too Many Files.' }),
+    fileIsTooBig: msg('File is Too Big.', { id: 'vaadin-upload.error.fileIsTooBig.File is Too Big.' }),
+    incorrectFileType: msg('Incorrect File Type.', { id: 'vaadin-upload.error.incorrectFileType.Incorrect File Type.' })
+  },
+  uploading: {
+    status: {
+      connecting: msg('Connecting...', { id: 'vaadin-upload.uploading.status.connecting.Connecting...' }),
+      stalled: msg('Stalled', { id: 'vaadin-upload.uploading.status.stalled.Stalled' }),
+      processing: msg('Processing File...', { id: 'vaadin-upload.uploading.status.processing.Processing File...' }),
+      held: msg('Queued', { id: 'vaadin-upload.uploading.status.held.Queued' })
+    },
+    remainingTime: {
+      prefix: msg('remaining time: ', { id: 'vaadin-upload.uploading.remainingTime.prefix.remaining time: ' }),
+      unknown: msg('unknown remaining time', { id: 'vaadin-upload.uploading.remainingTime.unknown.unknown remaining time' })
+    },
+    error: {
+      serverUnavailable: msg('Upload failed, please try again later', { id: 'vaadin-upload.uploading.error.serverUnavailable.Upload failed, please try again later' }),
+      unexpectedServerError: msg('Upload failed due to server error', { id: 'vaadin-upload.uploading.error.unexpectedServerError.Upload failed due to server error' }),
+      forbidden: msg('Upload forbidden', { id: 'vaadin-upload.uploading.error.forbidden.Upload forbidden' })
+    }
+  },
+  file: {
+    retry: msg('Retry', { id: 'vaadin-upload.file.retry.Retry' }),
+    start: msg('Start', { id: 'vaadin-upload.file.start.Start' }),
+    remove: msg('Remove', { id: 'vaadin-upload.file.remove.Remove' })
+  },
+  units: {
+    size: [
+      msg('B', { id: 'vaadin-upload.units.size.B' }),
+      msg('kB', { id: 'vaadin-upload.units.size.kB' }),
+      msg('MB', { id: 'vaadin-upload.units.size.MB' }),
+      msg('GB', { id: 'vaadin-upload.units.size.GB' }),
+      msg('TB', { id: 'vaadin-upload.units.size.TB' }),
+      msg('PB', { id: 'vaadin-upload.units.size.PB' }),
+      msg('EB', { id: 'vaadin-upload.units.size.EB' }),
+      msg('ZB', { id: 'vaadin-upload.units.size.ZB' }),
+      msg('YB', { id: 'vaadin-upload.units.size.YB' })
+    ]
+  }
+};
+  }
+}
+
+export const localizeUpload = directive(UploadDirective);

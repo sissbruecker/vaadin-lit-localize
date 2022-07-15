@@ -150,6 +150,118 @@
   <source>Check that you have entered the correct username and password and try again.</source>
   <target>Bitte prüfe ob Du den Benutzernamen oder das Passwort korrekt eingegeben hast</target>
 </trans-unit>
+<trans-unit id="vaadin-upload.dropFiles.one.Drop file here">
+  <source>Drop file here</source>
+  <target>Datei hierher ziehen</target>
+</trans-unit>
+<trans-unit id="vaadin-upload.dropFiles.many.Drop files here">
+  <source>Drop files here</source>
+  <target>Dateien hierher ziehen</target>
+</trans-unit>
+<trans-unit id="vaadin-upload.addFiles.one.Upload File...">
+  <source>Upload File...</source>
+  <target>Datei hochladen...</target>
+</trans-unit>
+<trans-unit id="vaadin-upload.addFiles.many.Upload Files...">
+  <source>Upload Files...</source>
+  <target>Dateien hochladen...</target>
+</trans-unit>
+<trans-unit id="vaadin-upload.error.tooManyFiles.Too Many Files.">
+  <source>Too Many Files.</source>
+  <target>Zuviele Dateien</target>
+</trans-unit>
+<trans-unit id="vaadin-upload.error.fileIsTooBig.File is Too Big.">
+  <source>File is Too Big.</source>
+  <target>Datei ist zu groß</target>
+</trans-unit>
+<trans-unit id="vaadin-upload.error.incorrectFileType.Incorrect File Type.">
+  <source>Incorrect File Type.</source>
+  <target>Ungültige Dateiart</target>
+</trans-unit>
+<trans-unit id="vaadin-upload.uploading.status.connecting.Connecting...">
+  <source>Connecting...</source>
+  <target>Verbinden</target>
+</trans-unit>
+<trans-unit id="vaadin-upload.uploading.status.stalled.Stalled">
+  <source>Stalled</source>
+  <target>Angehalten</target>
+</trans-unit>
+<trans-unit id="vaadin-upload.uploading.status.processing.Processing File...">
+  <source>Processing File...</source>
+  <target>Verarbeite Datei...</target>
+</trans-unit>
+<trans-unit id="vaadin-upload.uploading.status.held.Queued">
+  <source>Queued</source>
+  <target>In Warteschlange</target>
+</trans-unit>
+<trans-unit id="vaadin-upload.uploading.remainingTime.prefix.remaining time: ">
+  <source>remaining time: </source>
+  <target>verbleibende Zeit: </target>
+</trans-unit>
+<trans-unit id="vaadin-upload.uploading.remainingTime.unknown.unknown remaining time">
+  <source>unknown remaining time</source>
+  <target>verbleibende Zeit kann nicht ermittelt werden</target>
+</trans-unit>
+<trans-unit id="vaadin-upload.uploading.error.serverUnavailable.Upload failed, please try again later">
+  <source>Upload failed, please try again later</source>
+  <target>Upload fehlgeschlagen, bitte versuche es später noch einmal</target>
+</trans-unit>
+<trans-unit id="vaadin-upload.uploading.error.unexpectedServerError.Upload failed due to server error">
+  <source>Upload failed due to server error</source>
+  <target>Upload fehlgeschlagen, bitte versuche es später noch einmal</target>
+</trans-unit>
+<trans-unit id="vaadin-upload.uploading.error.forbidden.Upload forbidden">
+  <source>Upload forbidden</source>
+  <target>Upload fehlgeschlagen, bitte versuche es später noch einmal</target>
+</trans-unit>
+<trans-unit id="vaadin-upload.file.retry.Retry">
+  <source>Retry</source>
+  <target>Wiederholen</target>
+</trans-unit>
+<trans-unit id="vaadin-upload.file.start.Start">
+  <source>Start</source>
+  <target>Start</target>
+</trans-unit>
+<trans-unit id="vaadin-upload.file.remove.Remove">
+  <source>Remove</source>
+  <target>Entfernen</target>
+</trans-unit>
+<trans-unit id="vaadin-upload.units.size.B">
+  <source>B</source>
+  <target>B</target>
+</trans-unit>
+<trans-unit id="vaadin-upload.units.size.kB">
+  <source>kB</source>
+  <target>kB</target>
+</trans-unit>
+<trans-unit id="vaadin-upload.units.size.MB">
+  <source>MB</source>
+  <target>MB</target>
+</trans-unit>
+<trans-unit id="vaadin-upload.units.size.GB">
+  <source>GB</source>
+  <target>GB</target>
+</trans-unit>
+<trans-unit id="vaadin-upload.units.size.TB">
+  <source>TB</source>
+  <target>TB</target>
+</trans-unit>
+<trans-unit id="vaadin-upload.units.size.PB">
+  <source>PB</source>
+  <target>PB</target>
+</trans-unit>
+<trans-unit id="vaadin-upload.units.size.EB">
+  <source>EB</source>
+  <target>EB</target>
+</trans-unit>
+<trans-unit id="vaadin-upload.units.size.ZB">
+  <source>ZB</source>
+  <target>ZB</target>
+</trans-unit>
+<trans-unit id="vaadin-upload.units.size.YB">
+  <source>YB</source>
+  <target>YB</target>
+</trans-unit>
 </body>
 </file>
 </xliff>

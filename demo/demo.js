@@ -1,9 +1,14 @@
 import "@vaadin/date-picker";
 import "@vaadin/select";
 import "@vaadin/login/vaadin-login-form.js";
+import "@vaadin/upload";
 import { render, html, LitElement } from "lit";
 import { configureLocalization } from "@lit/localize";
-import { localizeDatePicker, localizeLogin } from "../src/directives";
+import {
+  localizeDatePicker,
+  localizeLogin,
+  localizeUpload,
+} from "../src/directives";
 import {
   sourceLocale,
   targetLocales,
@@ -53,6 +58,8 @@ class VaadinLitLocalizeDemo extends LitElement {
       ></vaadin-date-picker>
       <br />
       <vaadin-login-form ${localizeLogin()}></vaadin-login-form>
+      <br />
+      <vaadin-upload ${localizeUpload()} no-auto max-files="3"></vaadin-upload>
     `;
   }
 }

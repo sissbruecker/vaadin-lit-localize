@@ -83,6 +83,11 @@ function run() {
       component: "LoginForm",
       prefix: "vaadin-login",
     },
+    {
+      name: "localizeUpload",
+      component: "Upload",
+      prefix: "vaadin-upload",
+    },
   ];
 
   const directivesCode = directives

@@ -17,6 +17,7 @@
     "@vaadin/date-picker": "^23.1.4",
     "@vaadin/login": "^23.1.4",
     "@vaadin/select": "^23.1.4",
+    "@vaadin/upload": "^23.1.4",
     "@web/dev-server": "^0.1.32",
     "jsdom": "^20.0.0",
     "prettier": "^2.7.1",
