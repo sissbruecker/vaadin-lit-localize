@@ -2,263 +2,263 @@
 <xliff version="1.2" xmlns="urn:oasis:names:tc:xliff:document:1.2">
 <file target-language="de-DE" source-language="en" original="lit-localize-inputs" datatype="plaintext">
 <body>
-<trans-unit id="vaadin-date-picker.monthNames.January">
+<trans-unit id="vaadin-date-picker.monthNames.0">
   <source>January</source>
   <target>Januar</target>
 </trans-unit>
-<trans-unit id="vaadin-date-picker.monthNames.February">
+<trans-unit id="vaadin-date-picker.monthNames.1">
   <source>February</source>
   <target>Februar</target>
 </trans-unit>
-<trans-unit id="vaadin-date-picker.monthNames.March">
+<trans-unit id="vaadin-date-picker.monthNames.2">
   <source>March</source>
   <target>März</target>
 </trans-unit>
-<trans-unit id="vaadin-date-picker.monthNames.April">
+<trans-unit id="vaadin-date-picker.monthNames.3">
   <source>April</source>
   <target>April</target>
 </trans-unit>
-<trans-unit id="vaadin-date-picker.monthNames.May">
+<trans-unit id="vaadin-date-picker.monthNames.4">
   <source>May</source>
   <target>Mai</target>
 </trans-unit>
-<trans-unit id="vaadin-date-picker.monthNames.June">
+<trans-unit id="vaadin-date-picker.monthNames.5">
   <source>June</source>
   <target>Juni</target>
 </trans-unit>
-<trans-unit id="vaadin-date-picker.monthNames.July">
+<trans-unit id="vaadin-date-picker.monthNames.6">
   <source>July</source>
   <target>Juli</target>
 </trans-unit>
-<trans-unit id="vaadin-date-picker.monthNames.August">
+<trans-unit id="vaadin-date-picker.monthNames.7">
   <source>August</source>
   <target>August</target>
 </trans-unit>
-<trans-unit id="vaadin-date-picker.monthNames.September">
+<trans-unit id="vaadin-date-picker.monthNames.8">
   <source>September</source>
   <target>September</target>
 </trans-unit>
-<trans-unit id="vaadin-date-picker.monthNames.October">
+<trans-unit id="vaadin-date-picker.monthNames.9">
   <source>October</source>
   <target>Oktober</target>
 </trans-unit>
-<trans-unit id="vaadin-date-picker.monthNames.November">
+<trans-unit id="vaadin-date-picker.monthNames.10">
   <source>November</source>
   <target>November</target>
 </trans-unit>
-<trans-unit id="vaadin-date-picker.monthNames.December">
+<trans-unit id="vaadin-date-picker.monthNames.11">
   <source>December</source>
   <target>Dezember</target>
 </trans-unit>
-<trans-unit id="vaadin-date-picker.weekdays.Sunday">
+<trans-unit id="vaadin-date-picker.weekdays.0">
   <source>Sunday</source>
   <target>Sonntag</target>
 </trans-unit>
-<trans-unit id="vaadin-date-picker.weekdays.Monday">
+<trans-unit id="vaadin-date-picker.weekdays.1">
   <source>Monday</source>
   <target>Montag</target>
 </trans-unit>
-<trans-unit id="vaadin-date-picker.weekdays.Tuesday">
+<trans-unit id="vaadin-date-picker.weekdays.2">
   <source>Tuesday</source>
   <target>Dienstag</target>
 </trans-unit>
-<trans-unit id="vaadin-date-picker.weekdays.Wednesday">
+<trans-unit id="vaadin-date-picker.weekdays.3">
   <source>Wednesday</source>
   <target>Mittwoch</target>
 </trans-unit>
-<trans-unit id="vaadin-date-picker.weekdays.Thursday">
+<trans-unit id="vaadin-date-picker.weekdays.4">
   <source>Thursday</source>
   <target>Donnerstag</target>
 </trans-unit>
-<trans-unit id="vaadin-date-picker.weekdays.Friday">
+<trans-unit id="vaadin-date-picker.weekdays.5">
   <source>Friday</source>
   <target>Freitag</target>
 </trans-unit>
-<trans-unit id="vaadin-date-picker.weekdays.Saturday">
+<trans-unit id="vaadin-date-picker.weekdays.6">
   <source>Saturday</source>
   <target>Samstag</target>
 </trans-unit>
-<trans-unit id="vaadin-date-picker.weekdaysShort.Sun">
+<trans-unit id="vaadin-date-picker.weekdaysShort.0">
   <source>Sun</source>
   <target>So</target>
 </trans-unit>
-<trans-unit id="vaadin-date-picker.weekdaysShort.Mon">
+<trans-unit id="vaadin-date-picker.weekdaysShort.1">
   <source>Mon</source>
   <target>Mo</target>
 </trans-unit>
-<trans-unit id="vaadin-date-picker.weekdaysShort.Tue">
+<trans-unit id="vaadin-date-picker.weekdaysShort.2">
   <source>Tue</source>
   <target>Di</target>
 </trans-unit>
-<trans-unit id="vaadin-date-picker.weekdaysShort.Wed">
+<trans-unit id="vaadin-date-picker.weekdaysShort.3">
   <source>Wed</source>
   <target>Mi</target>
 </trans-unit>
-<trans-unit id="vaadin-date-picker.weekdaysShort.Thu">
+<trans-unit id="vaadin-date-picker.weekdaysShort.4">
   <source>Thu</source>
   <target>Do</target>
 </trans-unit>
-<trans-unit id="vaadin-date-picker.weekdaysShort.Fri">
+<trans-unit id="vaadin-date-picker.weekdaysShort.5">
   <source>Fri</source>
   <target>Fr</target>
 </trans-unit>
-<trans-unit id="vaadin-date-picker.weekdaysShort.Sat">
+<trans-unit id="vaadin-date-picker.weekdaysShort.6">
   <source>Sat</source>
   <target>Sa</target>
 </trans-unit>
-<trans-unit id="vaadin-date-picker.week.Week">
+<trans-unit id="vaadin-date-picker.week">
   <source>Week</source>
   <target>Woche</target>
 </trans-unit>
-<trans-unit id="vaadin-date-picker.calendar.Calendar">
+<trans-unit id="vaadin-date-picker.calendar">
   <source>Calendar</source>
   <target>Kalender</target>
 </trans-unit>
-<trans-unit id="vaadin-date-picker.today.Today">
+<trans-unit id="vaadin-date-picker.today">
   <source>Today</source>
   <target>Heute</target>
 </trans-unit>
-<trans-unit id="vaadin-date-picker.cancel.Cancel">
+<trans-unit id="vaadin-date-picker.cancel">
   <source>Cancel</source>
   <target>Abbrechen</target>
 </trans-unit>
-<trans-unit id="vaadin-login.form.title.Log in">
+<trans-unit id="vaadin-login.form.title">
   <source>Log in</source>
   <target>Login</target>
 </trans-unit>
-<trans-unit id="vaadin-login.form.username.Username">
+<trans-unit id="vaadin-login.form.username">
   <source>Username</source>
   <target>Benutzername</target>
 </trans-unit>
-<trans-unit id="vaadin-login.form.password.Password">
+<trans-unit id="vaadin-login.form.password">
   <source>Password</source>
   <target>Passwort</target>
 </trans-unit>
-<trans-unit id="vaadin-login.form.submit.Log in">
+<trans-unit id="vaadin-login.form.submit">
   <source>Log in</source>
   <target>Anmelden</target>
 </trans-unit>
-<trans-unit id="vaadin-login.form.forgotPassword.Forgot password">
+<trans-unit id="vaadin-login.form.forgotPassword">
   <source>Forgot password</source>
   <target>Passwort vergessen?</target>
 </trans-unit>
-<trans-unit id="vaadin-login.errorMessage.title.Incorrect username or password">
+<trans-unit id="vaadin-login.errorMessage.title">
   <source>Incorrect username or password</source>
   <target>Benutzername oder Passwort sind nicht korrekt</target>
 </trans-unit>
-<trans-unit id="vaadin-login.errorMessage.message.Check that you have entered the correct username and password and try again.">
+<trans-unit id="vaadin-login.errorMessage.message">
   <source>Check that you have entered the correct username and password and try again.</source>
   <target>Bitte prüfe ob Du den Benutzernamen oder das Passwort korrekt eingegeben hast</target>
 </trans-unit>
-<trans-unit id="vaadin-upload.dropFiles.one.Drop file here">
+<trans-unit id="vaadin-upload.dropFiles.one">
   <source>Drop file here</source>
   <target>Datei hierher ziehen</target>
 </trans-unit>
-<trans-unit id="vaadin-upload.dropFiles.many.Drop files here">
+<trans-unit id="vaadin-upload.dropFiles.many">
   <source>Drop files here</source>
   <target>Dateien hierher ziehen</target>
 </trans-unit>
-<trans-unit id="vaadin-upload.addFiles.one.Upload File...">
+<trans-unit id="vaadin-upload.addFiles.one">
   <source>Upload File...</source>
   <target>Datei hochladen...</target>
 </trans-unit>
-<trans-unit id="vaadin-upload.addFiles.many.Upload Files...">
+<trans-unit id="vaadin-upload.addFiles.many">
   <source>Upload Files...</source>
   <target>Dateien hochladen...</target>
 </trans-unit>
-<trans-unit id="vaadin-upload.error.tooManyFiles.Too Many Files.">
+<trans-unit id="vaadin-upload.error.tooManyFiles">
   <source>Too Many Files.</source>
   <target>Zuviele Dateien</target>
 </trans-unit>
-<trans-unit id="vaadin-upload.error.fileIsTooBig.File is Too Big.">
+<trans-unit id="vaadin-upload.error.fileIsTooBig">
   <source>File is Too Big.</source>
   <target>Datei ist zu groß</target>
 </trans-unit>
-<trans-unit id="vaadin-upload.error.incorrectFileType.Incorrect File Type.">
+<trans-unit id="vaadin-upload.error.incorrectFileType">
   <source>Incorrect File Type.</source>
   <target>Ungültige Dateiart</target>
 </trans-unit>
-<trans-unit id="vaadin-upload.uploading.status.connecting.Connecting...">
+<trans-unit id="vaadin-upload.uploading.status.connecting">
   <source>Connecting...</source>
   <target>Verbinden</target>
 </trans-unit>
-<trans-unit id="vaadin-upload.uploading.status.stalled.Stalled">
+<trans-unit id="vaadin-upload.uploading.status.stalled">
   <source>Stalled</source>
   <target>Angehalten</target>
 </trans-unit>
-<trans-unit id="vaadin-upload.uploading.status.processing.Processing File...">
+<trans-unit id="vaadin-upload.uploading.status.processing">
   <source>Processing File...</source>
   <target>Verarbeite Datei...</target>
 </trans-unit>
-<trans-unit id="vaadin-upload.uploading.status.held.Queued">
+<trans-unit id="vaadin-upload.uploading.status.held">
   <source>Queued</source>
   <target>In Warteschlange</target>
 </trans-unit>
-<trans-unit id="vaadin-upload.uploading.remainingTime.prefix.remaining time: ">
+<trans-unit id="vaadin-upload.uploading.remainingTime.prefix">
   <source>remaining time: </source>
   <target>verbleibende Zeit: </target>
 </trans-unit>
-<trans-unit id="vaadin-upload.uploading.remainingTime.unknown.unknown remaining time">
+<trans-unit id="vaadin-upload.uploading.remainingTime.unknown">
   <source>unknown remaining time</source>
   <target>verbleibende Zeit kann nicht ermittelt werden</target>
 </trans-unit>
-<trans-unit id="vaadin-upload.uploading.error.serverUnavailable.Upload failed, please try again later">
+<trans-unit id="vaadin-upload.uploading.error.serverUnavailable">
   <source>Upload failed, please try again later</source>
   <target>Upload fehlgeschlagen, bitte versuche es später noch einmal</target>
 </trans-unit>
-<trans-unit id="vaadin-upload.uploading.error.unexpectedServerError.Upload failed due to server error">
+<trans-unit id="vaadin-upload.uploading.error.unexpectedServerError">
   <source>Upload failed due to server error</source>
   <target>Upload fehlgeschlagen, bitte versuche es später noch einmal</target>
 </trans-unit>
-<trans-unit id="vaadin-upload.uploading.error.forbidden.Upload forbidden">
+<trans-unit id="vaadin-upload.uploading.error.forbidden">
   <source>Upload forbidden</source>
   <target>Upload fehlgeschlagen, bitte versuche es später noch einmal</target>
 </trans-unit>
-<trans-unit id="vaadin-upload.file.retry.Retry">
+<trans-unit id="vaadin-upload.file.retry">
   <source>Retry</source>
   <target>Wiederholen</target>
 </trans-unit>
-<trans-unit id="vaadin-upload.file.start.Start">
+<trans-unit id="vaadin-upload.file.start">
   <source>Start</source>
   <target>Start</target>
 </trans-unit>
-<trans-unit id="vaadin-upload.file.remove.Remove">
+<trans-unit id="vaadin-upload.file.remove">
   <source>Remove</source>
   <target>Entfernen</target>
 </trans-unit>
-<trans-unit id="vaadin-upload.units.size.B">
+<trans-unit id="vaadin-upload.units.size.0">
   <source>B</source>
   <target>B</target>
 </trans-unit>
-<trans-unit id="vaadin-upload.units.size.kB">
+<trans-unit id="vaadin-upload.units.size.1">
   <source>kB</source>
   <target>kB</target>
 </trans-unit>
-<trans-unit id="vaadin-upload.units.size.MB">
+<trans-unit id="vaadin-upload.units.size.2">
   <source>MB</source>
   <target>MB</target>
 </trans-unit>
-<trans-unit id="vaadin-upload.units.size.GB">
+<trans-unit id="vaadin-upload.units.size.3">
   <source>GB</source>
   <target>GB</target>
 </trans-unit>
-<trans-unit id="vaadin-upload.units.size.TB">
+<trans-unit id="vaadin-upload.units.size.4">
   <source>TB</source>
   <target>TB</target>
 </trans-unit>
-<trans-unit id="vaadin-upload.units.size.PB">
+<trans-unit id="vaadin-upload.units.size.5">
   <source>PB</source>
   <target>PB</target>
 </trans-unit>
-<trans-unit id="vaadin-upload.units.size.EB">
+<trans-unit id="vaadin-upload.units.size.6">
   <source>EB</source>
   <target>EB</target>
 </trans-unit>
-<trans-unit id="vaadin-upload.units.size.ZB">
+<trans-unit id="vaadin-upload.units.size.7">
   <source>ZB</source>
   <target>ZB</target>
 </trans-unit>
-<trans-unit id="vaadin-upload.units.size.YB">
+<trans-unit id="vaadin-upload.units.size.8">
   <source>YB</source>
   <target>YB</target>
 </trans-unit>

@@ -75,41 +75,41 @@ export class DatePickerDirective extends LocalizeDirective {
   getLocalization() {
     return {
   monthNames: [
-    msg('January', { id: 'vaadin-date-picker.monthNames.January' }),
-    msg('February', { id: 'vaadin-date-picker.monthNames.February' }),
-    msg('March', { id: 'vaadin-date-picker.monthNames.March' }),
-    msg('April', { id: 'vaadin-date-picker.monthNames.April' }),
-    msg('May', { id: 'vaadin-date-picker.monthNames.May' }),
-    msg('June', { id: 'vaadin-date-picker.monthNames.June' }),
-    msg('July', { id: 'vaadin-date-picker.monthNames.July' }),
-    msg('August', { id: 'vaadin-date-picker.monthNames.August' }),
-    msg('September', { id: 'vaadin-date-picker.monthNames.September' }),
-    msg('October', { id: 'vaadin-date-picker.monthNames.October' }),
-    msg('November', { id: 'vaadin-date-picker.monthNames.November' }),
-    msg('December', { id: 'vaadin-date-picker.monthNames.December' })
+    msg('January', { id: 'vaadin-date-picker.monthNames.0' }),
+    msg('February', { id: 'vaadin-date-picker.monthNames.1' }),
+    msg('March', { id: 'vaadin-date-picker.monthNames.2' }),
+    msg('April', { id: 'vaadin-date-picker.monthNames.3' }),
+    msg('May', { id: 'vaadin-date-picker.monthNames.4' }),
+    msg('June', { id: 'vaadin-date-picker.monthNames.5' }),
+    msg('July', { id: 'vaadin-date-picker.monthNames.6' }),
+    msg('August', { id: 'vaadin-date-picker.monthNames.7' }),
+    msg('September', { id: 'vaadin-date-picker.monthNames.8' }),
+    msg('October', { id: 'vaadin-date-picker.monthNames.9' }),
+    msg('November', { id: 'vaadin-date-picker.monthNames.10' }),
+    msg('December', { id: 'vaadin-date-picker.monthNames.11' })
   ],
   weekdays: [
-    msg('Sunday', { id: 'vaadin-date-picker.weekdays.Sunday' }),
-    msg('Monday', { id: 'vaadin-date-picker.weekdays.Monday' }),
-    msg('Tuesday', { id: 'vaadin-date-picker.weekdays.Tuesday' }),
-    msg('Wednesday', { id: 'vaadin-date-picker.weekdays.Wednesday' }),
-    msg('Thursday', { id: 'vaadin-date-picker.weekdays.Thursday' }),
-    msg('Friday', { id: 'vaadin-date-picker.weekdays.Friday' }),
-    msg('Saturday', { id: 'vaadin-date-picker.weekdays.Saturday' })
+    msg('Sunday', { id: 'vaadin-date-picker.weekdays.0' }),
+    msg('Monday', { id: 'vaadin-date-picker.weekdays.1' }),
+    msg('Tuesday', { id: 'vaadin-date-picker.weekdays.2' }),
+    msg('Wednesday', { id: 'vaadin-date-picker.weekdays.3' }),
+    msg('Thursday', { id: 'vaadin-date-picker.weekdays.4' }),
+    msg('Friday', { id: 'vaadin-date-picker.weekdays.5' }),
+    msg('Saturday', { id: 'vaadin-date-picker.weekdays.6' })
   ],
   weekdaysShort: [
-    msg('Sun', { id: 'vaadin-date-picker.weekdaysShort.Sun' }),
-    msg('Mon', { id: 'vaadin-date-picker.weekdaysShort.Mon' }),
-    msg('Tue', { id: 'vaadin-date-picker.weekdaysShort.Tue' }),
-    msg('Wed', { id: 'vaadin-date-picker.weekdaysShort.Wed' }),
-    msg('Thu', { id: 'vaadin-date-picker.weekdaysShort.Thu' }),
-    msg('Fri', { id: 'vaadin-date-picker.weekdaysShort.Fri' }),
-    msg('Sat', { id: 'vaadin-date-picker.weekdaysShort.Sat' })
+    msg('Sun', { id: 'vaadin-date-picker.weekdaysShort.0' }),
+    msg('Mon', { id: 'vaadin-date-picker.weekdaysShort.1' }),
+    msg('Tue', { id: 'vaadin-date-picker.weekdaysShort.2' }),
+    msg('Wed', { id: 'vaadin-date-picker.weekdaysShort.3' }),
+    msg('Thu', { id: 'vaadin-date-picker.weekdaysShort.4' }),
+    msg('Fri', { id: 'vaadin-date-picker.weekdaysShort.5' }),
+    msg('Sat', { id: 'vaadin-date-picker.weekdaysShort.6' })
   ],
-  week: msg('Week', { id: 'vaadin-date-picker.week.Week' }),
-  calendar: msg('Calendar', { id: 'vaadin-date-picker.calendar.Calendar' }),
-  today: msg('Today', { id: 'vaadin-date-picker.today.Today' }),
-  cancel: msg('Cancel', { id: 'vaadin-date-picker.cancel.Cancel' })
+  week: msg('Week', { id: 'vaadin-date-picker.week' }),
+  calendar: msg('Calendar', { id: 'vaadin-date-picker.calendar' }),
+  today: msg('Today', { id: 'vaadin-date-picker.today' }),
+  cancel: msg('Cancel', { id: 'vaadin-date-picker.cancel' })
 };
   }
 }
@@ -120,15 +120,15 @@ export class LoginFormDirective extends LocalizeDirective {
   getLocalization() {
     return {
   form: {
-    title: msg('Log in', { id: 'vaadin-login.form.title.Log in' }),
-    username: msg('Username', { id: 'vaadin-login.form.username.Username' }),
-    password: msg('Password', { id: 'vaadin-login.form.password.Password' }),
-    submit: msg('Log in', { id: 'vaadin-login.form.submit.Log in' }),
-    forgotPassword: msg('Forgot password', { id: 'vaadin-login.form.forgotPassword.Forgot password' })
+    title: msg('Log in', { id: 'vaadin-login.form.title' }),
+    username: msg('Username', { id: 'vaadin-login.form.username' }),
+    password: msg('Password', { id: 'vaadin-login.form.password' }),
+    submit: msg('Log in', { id: 'vaadin-login.form.submit' }),
+    forgotPassword: msg('Forgot password', { id: 'vaadin-login.form.forgotPassword' })
   },
   errorMessage: {
-    title: msg('Incorrect username or password', { id: 'vaadin-login.errorMessage.title.Incorrect username or password' }),
-    message: msg('Check that you have entered the correct username and password and try again.', { id: 'vaadin-login.errorMessage.message.Check that you have entered the correct username and password and try again.' })
+    title: msg('Incorrect username or password', { id: 'vaadin-login.errorMessage.title' }),
+    message: msg('Check that you have entered the correct username and password and try again.', { id: 'vaadin-login.errorMessage.message' })
   }
 };
   }
@@ -140,51 +140,51 @@ export class UploadDirective extends LocalizeDirective {
   getLocalization() {
     return {
   dropFiles: {
-    one: msg('Drop file here', { id: 'vaadin-upload.dropFiles.one.Drop file here' }),
-    many: msg('Drop files here', { id: 'vaadin-upload.dropFiles.many.Drop files here' })
+    one: msg('Drop file here', { id: 'vaadin-upload.dropFiles.one' }),
+    many: msg('Drop files here', { id: 'vaadin-upload.dropFiles.many' })
   },
   addFiles: {
-    one: msg('Upload File...', { id: 'vaadin-upload.addFiles.one.Upload File...' }),
-    many: msg('Upload Files...', { id: 'vaadin-upload.addFiles.many.Upload Files...' })
+    one: msg('Upload File...', { id: 'vaadin-upload.addFiles.one' }),
+    many: msg('Upload Files...', { id: 'vaadin-upload.addFiles.many' })
   },
   error: {
-    tooManyFiles: msg('Too Many Files.', { id: 'vaadin-upload.error.tooManyFiles.Too Many Files.' }),
-    fileIsTooBig: msg('File is Too Big.', { id: 'vaadin-upload.error.fileIsTooBig.File is Too Big.' }),
-    incorrectFileType: msg('Incorrect File Type.', { id: 'vaadin-upload.error.incorrectFileType.Incorrect File Type.' })
+    tooManyFiles: msg('Too Many Files.', { id: 'vaadin-upload.error.tooManyFiles' }),
+    fileIsTooBig: msg('File is Too Big.', { id: 'vaadin-upload.error.fileIsTooBig' }),
+    incorrectFileType: msg('Incorrect File Type.', { id: 'vaadin-upload.error.incorrectFileType' })
   },
   uploading: {
     status: {
-      connecting: msg('Connecting...', { id: 'vaadin-upload.uploading.status.connecting.Connecting...' }),
-      stalled: msg('Stalled', { id: 'vaadin-upload.uploading.status.stalled.Stalled' }),
-      processing: msg('Processing File...', { id: 'vaadin-upload.uploading.status.processing.Processing File...' }),
-      held: msg('Queued', { id: 'vaadin-upload.uploading.status.held.Queued' })
+      connecting: msg('Connecting...', { id: 'vaadin-upload.uploading.status.connecting' }),
+      stalled: msg('Stalled', { id: 'vaadin-upload.uploading.status.stalled' }),
+      processing: msg('Processing File...', { id: 'vaadin-upload.uploading.status.processing' }),
+      held: msg('Queued', { id: 'vaadin-upload.uploading.status.held' })
     },
     remainingTime: {
-      prefix: msg('remaining time: ', { id: 'vaadin-upload.uploading.remainingTime.prefix.remaining time: ' }),
-      unknown: msg('unknown remaining time', { id: 'vaadin-upload.uploading.remainingTime.unknown.unknown remaining time' })
+      prefix: msg('remaining time: ', { id: 'vaadin-upload.uploading.remainingTime.prefix' }),
+      unknown: msg('unknown remaining time', { id: 'vaadin-upload.uploading.remainingTime.unknown' })
     },
     error: {
-      serverUnavailable: msg('Upload failed, please try again later', { id: 'vaadin-upload.uploading.error.serverUnavailable.Upload failed, please try again later' }),
-      unexpectedServerError: msg('Upload failed due to server error', { id: 'vaadin-upload.uploading.error.unexpectedServerError.Upload failed due to server error' }),
-      forbidden: msg('Upload forbidden', { id: 'vaadin-upload.uploading.error.forbidden.Upload forbidden' })
+      serverUnavailable: msg('Upload failed, please try again later', { id: 'vaadin-upload.uploading.error.serverUnavailable' }),
+      unexpectedServerError: msg('Upload failed due to server error', { id: 'vaadin-upload.uploading.error.unexpectedServerError' }),
+      forbidden: msg('Upload forbidden', { id: 'vaadin-upload.uploading.error.forbidden' })
     }
   },
   file: {
-    retry: msg('Retry', { id: 'vaadin-upload.file.retry.Retry' }),
-    start: msg('Start', { id: 'vaadin-upload.file.start.Start' }),
-    remove: msg('Remove', { id: 'vaadin-upload.file.remove.Remove' })
+    retry: msg('Retry', { id: 'vaadin-upload.file.retry' }),
+    start: msg('Start', { id: 'vaadin-upload.file.start' }),
+    remove: msg('Remove', { id: 'vaadin-upload.file.remove' })
   },
   units: {
     size: [
-      msg('B', { id: 'vaadin-upload.units.size.B' }),
-      msg('kB', { id: 'vaadin-upload.units.size.kB' }),
-      msg('MB', { id: 'vaadin-upload.units.size.MB' }),
-      msg('GB', { id: 'vaadin-upload.units.size.GB' }),
-      msg('TB', { id: 'vaadin-upload.units.size.TB' }),
-      msg('PB', { id: 'vaadin-upload.units.size.PB' }),
-      msg('EB', { id: 'vaadin-upload.units.size.EB' }),
-      msg('ZB', { id: 'vaadin-upload.units.size.ZB' }),
-      msg('YB', { id: 'vaadin-upload.units.size.YB' })
+      msg('B', { id: 'vaadin-upload.units.size.0' }),
+      msg('kB', { id: 'vaadin-upload.units.size.1' }),
+      msg('MB', { id: 'vaadin-upload.units.size.2' }),
+      msg('GB', { id: 'vaadin-upload.units.size.3' }),
+      msg('TB', { id: 'vaadin-upload.units.size.4' }),
+      msg('PB', { id: 'vaadin-upload.units.size.5' }),
+      msg('EB', { id: 'vaadin-upload.units.size.6' }),
+      msg('ZB', { id: 'vaadin-upload.units.size.7' }),
+      msg('YB', { id: 'vaadin-upload.units.size.8' })
     ]
   }
 };

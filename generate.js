@@ -36,12 +36,11 @@ function localizeI18n(prefix, value) {
     });
     return result;
   } else if (isArray(value)) {
-    return value.map((item) => {
-      return localizeI18n(prefix, item);
+    return value.map((item, index) => {
+      return localizeI18n(`${prefix}.${index}`, item);
     });
   } else if (typeof value === "string") {
-    const messageId = prefix + "." + value;
-    return generateMessageInstruction(messageId, value);
+    return generateMessageInstruction(prefix, value);
   }
 }
 
