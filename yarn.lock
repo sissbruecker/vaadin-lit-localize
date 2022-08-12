@@ -448,6 +448,18 @@
   dependencies:
     "@types/node" "*"
 
+"@vaadin/app-layout@^23.1.4":
+  version "23.1.5"
+  resolved "https://registry.yarnpkg.com/@vaadin/app-layout/-/app-layout-23.1.5.tgz#7a1f5bd7ee7b0b73d7d109d11db29cd40a000ce1"
+  integrity sha512-Ymdje0xDvaU4H+CEBVwA+rWdC0K1eOjVERqHjha68prErrSQEUQJbt2htlUuOhMgaiwfZCaS3luAsxs6nZAOtQ==
+  dependencies:
+    "@polymer/polymer" "^3.0.0"
+    "@vaadin/button" "^23.1.5"
+    "@vaadin/component-base" "^23.1.5"
+    "@vaadin/vaadin-lumo-styles" "^23.1.5"
+    "@vaadin/vaadin-material-styles" "^23.1.5"
+    "@vaadin/vaadin-themable-mixin" "^23.1.5"
+
 "@vaadin/avatar-group@^23.1.4":
   version "23.1.5"
   resolved "https://registry.yarnpkg.com/@vaadin/avatar-group/-/avatar-group-23.1.5.tgz#215ce5b6185d35e0d8d39109d33d568ea0952db3"

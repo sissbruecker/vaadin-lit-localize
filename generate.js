@@ -71,6 +71,11 @@ export const ${directiveName} = directive(${componentClass}Directive);
 function run() {
   const directives = [
     {
+      name: "localizeAppLayout",
+      component: "AppLayout",
+      prefix: "vaadin-app-layout",
+    },
+    {
       name: "localizeAvatar",
       component: "Avatar",
       prefix: "vaadin-avatar",

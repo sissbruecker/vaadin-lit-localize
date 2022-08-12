@@ -2,6 +2,16 @@ import { msg } from '@lit/localize';
 import { directive } from 'lit/directive.js';
 import { LocalizeDirective } from './localize-directive.js';
 
+export class AppLayoutDirective extends LocalizeDirective {
+  getLocalization() {
+    return {
+  drawer: msg('Drawer', { id: 'vaadin-app-layout.drawer' })
+}
+  }
+}
+
+export const localizeAppLayout = directive(AppLayoutDirective);
+
 export class AvatarDirective extends LocalizeDirective {
   getLocalization() {
     return {
