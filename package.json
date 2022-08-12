@@ -24,6 +24,7 @@
     "@vaadin/login": "^23.1.4",
     "@vaadin/menu-bar": "^23.1.4",
     "@vaadin/message-input": "^23.1.4",
+    "@vaadin/multi-select-combo-box": "^23.1.4",
     "@vaadin/select": "^23.1.4",
     "@vaadin/upload": "^23.1.4",
     "@web/dev-server": "^0.1.32",

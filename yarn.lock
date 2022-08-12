@@ -513,6 +513,23 @@
     "@vaadin/vaadin-material-styles" "^23.1.5"
     "@vaadin/vaadin-themable-mixin" "^23.1.5"
 
+"@vaadin/combo-box@^23.1.5":
+  version "23.1.5"
+  resolved "https://registry.yarnpkg.com/@vaadin/combo-box/-/combo-box-23.1.5.tgz#8b15f6e15722d51e6b0876c40348900ac6d7e266"
+  integrity sha512-3IWx3rm2d1LnDRwkzia01vX8zG2tIJZU2jQdJ3u/RScB05Jz4fZFYvwaalKrybihShze7gCao0OHX7m5Yojz4g==
+  dependencies:
+    "@open-wc/dedupe-mixin" "^1.3.0"
+    "@polymer/polymer" "^3.0.0"
+    "@vaadin/component-base" "^23.1.5"
+    "@vaadin/field-base" "^23.1.5"
+    "@vaadin/input-container" "^23.1.5"
+    "@vaadin/item" "^23.1.5"
+    "@vaadin/lit-renderer" "^23.1.5"
+    "@vaadin/vaadin-lumo-styles" "^23.1.5"
+    "@vaadin/vaadin-material-styles" "^23.1.5"
+    "@vaadin/vaadin-overlay" "^23.1.5"
+    "@vaadin/vaadin-themable-mixin" "^23.1.5"
+
 "@vaadin/component-base@^23.1.5":
   version "23.1.5"
   resolved "https://registry.yarnpkg.com/@vaadin/component-base/-/component-base-23.1.5.tgz#490c59036e7e8855099a330a41bdc82278a7bbdf"
@@ -733,6 +750,20 @@
     "@vaadin/button" "^23.1.5"
     "@vaadin/component-base" "^23.1.5"
     "@vaadin/text-area" "^23.1.5"
+    "@vaadin/vaadin-lumo-styles" "^23.1.5"
+    "@vaadin/vaadin-material-styles" "^23.1.5"
+    "@vaadin/vaadin-themable-mixin" "^23.1.5"
+
+"@vaadin/multi-select-combo-box@^23.1.4":
+  version "23.1.5"
+  resolved "https://registry.yarnpkg.com/@vaadin/multi-select-combo-box/-/multi-select-combo-box-23.1.5.tgz#8192c188519766d373d7250854e57517f1177768"
+  integrity sha512-MTyW6S/nXKKLf4C2BHEoW+SiI6LqWG5vcaeFqKlEMFDyWL/ArHqzfWABBpnwJUhActXwsIBSHYQMQiiKxGyD/Q==
+  dependencies:
+    "@polymer/polymer" "^3.0.0"
+    "@vaadin/combo-box" "^23.1.5"
+    "@vaadin/component-base" "^23.1.5"
+    "@vaadin/field-base" "^23.1.5"
+    "@vaadin/input-container" "^23.1.5"
     "@vaadin/vaadin-lumo-styles" "^23.1.5"
     "@vaadin/vaadin-material-styles" "^23.1.5"
     "@vaadin/vaadin-themable-mixin" "^23.1.5"

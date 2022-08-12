@@ -246,6 +246,26 @@
   <source>Message</source>
   <target>Nachricht</target>
 </trans-unit>
+<trans-unit id="vaadin-multi-select-combo-box.cleared">
+  <source>Selection cleared</source>
+  <target>Auswahl gelöscht</target>
+</trans-unit>
+<trans-unit id="vaadin-multi-select-combo-box.focused">
+  <source>focused. Press Backspace to remove</source>
+  <target>fokussiert. Drücke Rücktaste zum Löschen</target>
+</trans-unit>
+<trans-unit id="vaadin-multi-select-combo-box.selected">
+  <source>added to selection</source>
+  <target>zur Auswahl hinzugefügt</target>
+</trans-unit>
+<trans-unit id="vaadin-multi-select-combo-box.deselected">
+  <source>removed from selection</source>
+  <target>aus der Auswahl entfernt</target>
+</trans-unit>
+<trans-unit id="vaadin-multi-select-combo-box.total">
+  <source>{count} items selected</source>
+  <target>{count} Einträge ausgewählt</target>
+</trans-unit>
 <trans-unit id="vaadin-upload.dropFiles.one">
   <source>Drop file here</source>
   <target>Datei hierher ziehen</target>

@@ -111,6 +111,11 @@ function run() {
       prefix: "vaadin-message-input",
     },
     {
+      name: "localizeMultiSelectComboBox",
+      component: "MultiSelectComboBox",
+      prefix: "vaadin-multi-select-combo-box",
+    },
+    {
       name: "localizeUpload",
       component: "Upload",
       prefix: "vaadin-upload",
