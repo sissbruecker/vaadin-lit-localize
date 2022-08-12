@@ -106,6 +106,11 @@ function run() {
       prefix: "vaadin-menu-bar",
     },
     {
+      name: "localizeMessageInput",
+      component: "MessageInput",
+      prefix: "vaadin-message-input",
+    },
+    {
       name: "localizeUpload",
       component: "Upload",
       prefix: "vaadin-upload",

@@ -6,5 +6,6 @@ export { Crud } from "@vaadin/crud";
 export { DatePicker } from "@vaadin/date-picker";
 export { LoginForm } from "@vaadin/login/vaadin-login-form.js";
 export { MenuBar } from "@vaadin/menu-bar";
+export { MessageInput } from "@vaadin/message-input";
 export { Upload } from "@vaadin/upload";
 

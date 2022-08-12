@@ -238,6 +238,14 @@
   <source>More options</source>
   <target>Weitere Optionen</target>
 </trans-unit>
+<trans-unit id="vaadin-message-input.send">
+  <source>Send</source>
+  <target>Senden</target>
+</trans-unit>
+<trans-unit id="vaadin-message-input.message">
+  <source>Message</source>
+  <target>Nachricht</target>
+</trans-unit>
 <trans-unit id="vaadin-upload.dropFiles.one">
   <source>Drop file here</source>
   <target>Datei hierher ziehen</target>

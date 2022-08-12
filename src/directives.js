@@ -146,6 +146,17 @@ export class MenuBarDirective extends LocalizeDirective {
 
 export const localizeMenuBar = directive(MenuBarDirective);
 
+export class MessageInputDirective extends LocalizeDirective {
+  getLocalization() {
+    return {
+  send: msg('Send', { id: 'vaadin-message-input.send' }),
+  message: msg('Message', { id: 'vaadin-message-input.message' })
+}
+  }
+}
+
+export const localizeMessageInput = directive(MessageInputDirective);
+
 export class UploadDirective extends LocalizeDirective {
   getLocalization() {
     return {

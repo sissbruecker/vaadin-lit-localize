@@ -1,7 +1,7 @@
 import { configureLocalization } from "@lit/localize";
 import { html, fixture, expect } from "@open-wc/testing";
 import "@vaadin/crud";
-import {localizeAvatarGroup, localizeCrud} from "../src/directives.js";
+import { localizeCrud } from "../src/directives.js";
 
 const germanLocale = {
   templates: {
@@ -32,9 +32,7 @@ describe("localizeCrud", () => {
       targetLocales: ["de"],
       loadLocale: () => Promise.resolve(germanLocale),
     });
-    crud = await fixture(html`
-      <vaadin-crud ${localizeCrud()}></vaadin-crud>
-    `);
+    crud = await fixture(html` <vaadin-crud ${localizeCrud()}></vaadin-crud> `);
   });
 
   it("should use default i18n values", () => {

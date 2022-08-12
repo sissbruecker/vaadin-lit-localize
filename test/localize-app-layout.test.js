@@ -20,7 +20,7 @@ describe("localizeAppLayout", () => {
       loadLocale: () => Promise.resolve(germanLocale),
     });
     appLayout = await fixture(html`
-      <vaadin-avatar ${localizeAppLayout()}></vaadin-avatar>
+      <vaadin-app-layout ${localizeAppLayout()}></vaadin-app-layout>
     `);
   });
 

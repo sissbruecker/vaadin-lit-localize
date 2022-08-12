@@ -724,6 +724,19 @@
     "@vaadin/vaadin-material-styles" "^23.1.5"
     "@vaadin/vaadin-themable-mixin" "^23.1.5"
 
+"@vaadin/message-input@^23.1.4":
+  version "23.1.5"
+  resolved "https://registry.yarnpkg.com/@vaadin/message-input/-/message-input-23.1.5.tgz#ffef2cfdff0c8e68efb008b7989a21b79e60398c"
+  integrity sha512-2lkf+0QhiKeEcc68PSDuzT8KJXhIrSp6IheGXoThySmswrNdrTRMBYxF0Q8iP+TsajwyD+lSYVmpD889toW7Kg==
+  dependencies:
+    "@polymer/polymer" "^3.0.0"
+    "@vaadin/button" "^23.1.5"
+    "@vaadin/component-base" "^23.1.5"
+    "@vaadin/text-area" "^23.1.5"
+    "@vaadin/vaadin-lumo-styles" "^23.1.5"
+    "@vaadin/vaadin-material-styles" "^23.1.5"
+    "@vaadin/vaadin-themable-mixin" "^23.1.5"
+
 "@vaadin/password-field@^23.1.5":
   version "23.1.5"
   resolved "https://registry.yarnpkg.com/@vaadin/password-field/-/password-field-23.1.5.tgz#ce13fe8d8fad56fd6bea8489dffc36669d550660"
@@ -764,6 +777,19 @@
     "@vaadin/vaadin-lumo-styles" "^23.1.5"
     "@vaadin/vaadin-material-styles" "^23.1.5"
     "@vaadin/vaadin-overlay" "^23.1.5"
+    "@vaadin/vaadin-themable-mixin" "^23.1.5"
+
+"@vaadin/text-area@^23.1.5":
+  version "23.1.5"
+  resolved "https://registry.yarnpkg.com/@vaadin/text-area/-/text-area-23.1.5.tgz#534f6dfd57c97e3fb860e8de1100feed0e5edbb2"
+  integrity sha512-4QHf5JYpdQIfHZZLwwDYU4bjqtpCOtGmilxF7bw8vUCcUHaqcBhGPc7Or/e/09twdCXUOfvY4jHfmBusHFOc0w==
+  dependencies:
+    "@polymer/polymer" "^3.0.0"
+    "@vaadin/component-base" "^23.1.5"
+    "@vaadin/field-base" "^23.1.5"
+    "@vaadin/input-container" "^23.1.5"
+    "@vaadin/vaadin-lumo-styles" "^23.1.5"
+    "@vaadin/vaadin-material-styles" "^23.1.5"
     "@vaadin/vaadin-themable-mixin" "^23.1.5"
 
 "@vaadin/text-field@^23.1.5":

@@ -4,6 +4,7 @@ import "@vaadin/crud";
 import "@vaadin/date-picker";
 import "@vaadin/login/vaadin-login-form.js";
 import "@vaadin/menu-bar";
+import "@vaadin/message-input";
 import "@vaadin/select";
 import "@vaadin/upload";
 import { render, html, LitElement } from "lit";
@@ -15,6 +16,7 @@ import {
   localizeDatePicker,
   localizeLogin,
   localizeMenuBar,
+  localizeMessageInput,
   localizeUpload,
 } from "../src/directives";
 import {
@@ -93,6 +95,8 @@ class VaadinLitLocalizeDemo extends LitElement {
         ]}"
         style="width: 300px"
       ></vaadin-menu-bar>
+      <br />
+      <vaadin-message-input ${localizeMessageInput()}></vaadin-message-input>
       <br />
       <vaadin-upload ${localizeUpload()} no-auto max-files="3"></vaadin-upload>
     `;
