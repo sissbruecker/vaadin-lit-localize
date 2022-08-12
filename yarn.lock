@@ -485,9 +485,9 @@
     "@vaadin/vaadin-usage-statistics" "^2.1.0"
     lit "^2.0.0"
 
-"@vaadin/date-picker@^23.1.4":
+"@vaadin/date-picker@23.1.4":
   version "23.1.4"
-  resolved "https://registry.npmjs.org/@vaadin/date-picker/-/date-picker-23.1.4.tgz"
+  resolved "https://registry.yarnpkg.com/@vaadin/date-picker/-/date-picker-23.1.4.tgz#7744aae18df49198e3de84457ab94bb14d99c8ac"
   integrity sha512-NCzAbq16/pjKdP6vFv/0GDxD8TFVzXYuTmyGysMdtQLwhGutTjWk2xlGgwiiCpMYkpXxDZwf6CulK6lkgB9rxQ==
   dependencies:
     "@open-wc/dedupe-mixin" "^1.3.0"
@@ -565,9 +565,9 @@
   dependencies:
     lit "^2.0.0"
 
-"@vaadin/login@^23.1.4":
+"@vaadin/login@23.1.4":
   version "23.1.4"
-  resolved "https://registry.npmjs.org/@vaadin/login/-/login-23.1.4.tgz"
+  resolved "https://registry.yarnpkg.com/@vaadin/login/-/login-23.1.4.tgz#4217bd9b8339613dc6690785b904e7cab5329dbf"
   integrity sha512-H5JbEOpeWnYLITfNBWr3nADmTWbKP5YNOd5olTMlndMaeIdmHO9YkWrEEtFa7XdZVIWfhYkKo5ZbQhkcM4pp8g==
   dependencies:
     "@open-wc/dedupe-mixin" "^1.3.0"
@@ -604,9 +604,9 @@
     "@vaadin/vaadin-material-styles" "^23.1.4"
     "@vaadin/vaadin-themable-mixin" "^23.1.4"
 
-"@vaadin/select@^23.1.4":
+"@vaadin/select@23.1.4":
   version "23.1.4"
-  resolved "https://registry.npmjs.org/@vaadin/select/-/select-23.1.4.tgz"
+  resolved "https://registry.yarnpkg.com/@vaadin/select/-/select-23.1.4.tgz#e577485e37e47e4144ea40e1e98b0536e5dd65c9"
   integrity sha512-pZCTwj8sqJiIuVUo/KLQEBWnU6GLCrI4HSZslQ22b9pnfcww1L7S1Pen7m80DGNO2CsUZpjcsaH0WukF4AjcCw==
   dependencies:
     "@polymer/polymer" "^3.2.0"
@@ -636,9 +636,9 @@
     "@vaadin/vaadin-material-styles" "^23.1.4"
     "@vaadin/vaadin-themable-mixin" "^23.1.4"
 
-"@vaadin/upload@^23.1.4":
+"@vaadin/upload@23.1.4":
   version "23.1.4"
-  resolved "https://registry.npmjs.org/@vaadin/upload/-/upload-23.1.4.tgz"
+  resolved "https://registry.yarnpkg.com/@vaadin/upload/-/upload-23.1.4.tgz#fbaf09d93c367489984d574c1373523a1b4034fb"
   integrity sha512-nfUVRYnRJAYgmQgTH+gt6PbrJrVXAWmRmSmPcQ4/pYtQQvjVlGj8pQeDlHpuPbudHrDxV6fOWDzKsuZV/MhoMA==
   dependencies:
     "@polymer/polymer" "^3.0.0"
