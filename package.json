@@ -6,7 +6,7 @@
   "scripts": {
     "start": "web-dev-server --node-resolve --open /demo",
     "generate": "rollup -c rollup.config.js && node generate.js",
-    "localize": "lit-localize extract && lit-localize build"
+    "demo-localize": "lit-localize --config ./demo/lit-localize.json extract && lit-localize --config ./demo/lit-localize.json build"
   },
   "dependencies": {
     "@lit/localize": "^0.11.3",

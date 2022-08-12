@@ -1,4 +1,8 @@
-class LocalizeDirective extends AsyncDirective {
+import { nothing } from 'lit';
+import { AsyncDirective } from 'lit/async-directive.js';
+import { PartType } from 'lit/directive.js';
+
+export class LocalizeDirective extends AsyncDirective {
   constructor(part) {
     super(part);
 

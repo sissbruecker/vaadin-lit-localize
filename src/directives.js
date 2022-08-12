@@ -1,75 +1,6 @@
 import { msg } from '@lit/localize';
-import { nothing } from 'lit';
-import { AsyncDirective } from 'lit/async-directive.js';
-import { directive, PartType } from 'lit/directive.js';
-
-class LocalizeDirective extends AsyncDirective {
-  constructor(part) {
-    super(part);
-
-    if (part.type !== PartType.ELEMENT) {
-      throw new Error(
-        `\`${this.constructor.name}\` must be bound to an element.`
-      );
-    }
-
-    this.__currentLocale = "__initial__";
-  }
-
-  render() {
-    return nothing;
-  }
-
-  update(part) {
-    if (this.__currentLocale === this.__lastRenderedLocale) return nothing;
-
-    this.__element = part.element;
-    this.__lastRenderedLocale = this.__currentLocale;
-    this.registerLocaleChangeHandler();
-    this.refreshI18n();
-
-    return nothing;
-  }
-
-  refreshI18n() {
-    const localization = this.getLocalization();
-    this.__element.i18n = {
-      ...this.__element.i18n,
-      ...localization,
-    };
-  }
-
-  getLocalization() {
-    throw new Error("getLocalization must be implemented by sub-class");
-  }
-
-  reconnected() {
-    this.registerLocaleChangeHandler();
-  }
-
-  disconnected() {
-    this.unregisterLocaleChangeHandler();
-  }
-
-  registerLocaleChangeHandler() {
-    if (this.__localeChangedHandler) return;
-    this.__localeChangedHandler = (e) => {
-      if (e.detail.status === "ready") {
-        this.__currentLocale = e.detail.readyLocale;
-        this.refreshI18n();
-      }
-    };
-    window.addEventListener("lit-localize-status", this.__localeChangedHandler);
-  }
-
-  unregisterLocaleChangeHandler() {
-    window.removeEventListener(
-      "lit-localize-status",
-      this.__localeChangedHandler
-    );
-    this.__localeChangedHandler = null;
-  }
-}
+import { directive } from 'lit/directive.js';
+import { LocalizeDirective } from './localize-directive.js';
 
 export class DatePickerDirective extends LocalizeDirective {
   getLocalization() {
@@ -110,7 +41,7 @@ export class DatePickerDirective extends LocalizeDirective {
   calendar: msg('Calendar', { id: 'vaadin-date-picker.calendar' }),
   today: msg('Today', { id: 'vaadin-date-picker.today' }),
   cancel: msg('Cancel', { id: 'vaadin-date-picker.cancel' })
-};
+}
   }
 }
 
@@ -130,7 +61,7 @@ export class LoginFormDirective extends LocalizeDirective {
     title: msg('Incorrect username or password', { id: 'vaadin-login.errorMessage.title' }),
     message: msg('Check that you have entered the correct username and password and try again.', { id: 'vaadin-login.errorMessage.message' })
   }
-};
+}
   }
 }
 
@@ -187,7 +118,7 @@ export class UploadDirective extends LocalizeDirective {
       msg('YB', { id: 'vaadin-upload.units.size.8' })
     ]
   }
-};
+}
   }
 }
 

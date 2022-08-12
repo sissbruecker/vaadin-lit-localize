@@ -1,9 +1,6 @@
 const fs = require("fs");
 const { JSDOM } = require("jsdom");
 
-const localizeDirective = fs.readFileSync("localize-directive.js", "utf8");
-const directiveTemplate = fs.readFileSync("directive-template.js", "utf8");
-
 // Prepare JSDOM instance, load bundle containing Vaadin components
 const dom = new JSDOM(``, { runScripts: "outside-only" });
 const bundle = fs.readFileSync("bundle.js", "utf8");
@@ -59,15 +56,14 @@ function renderDirectiveCode(directiveName, componentClass, messagePrefix) {
   );
   // Remove quotes to turn json into actual JS expressions
   const localizationCode = localizationJson.replaceAll('"', "");
-  let code = directiveTemplate;
-  code = code.replaceAll(
-    "__DirectiveClassName__",
-    `${componentClass}Directive`
-  );
-  code = code.replaceAll("__DirectiveFunctionName__", directiveName);
-  code = code.replaceAll("__DirectiveLocalization__", localizationCode);
+  return `export class ${componentClass}Directive extends LocalizeDirective {
+  getLocalization() {
+    return ${localizationCode}
+  }
+}
 
-  return code;
+export const ${directiveName} = directive(${componentClass}Directive);
+`;
 }
 
 function run() {
@@ -96,11 +92,9 @@ function run() {
     .join("\n");
 
   const generatedCode = `import { msg } from '@lit/localize';
-import { nothing } from 'lit';
-import { AsyncDirective } from 'lit/async-directive.js';
-import { directive, PartType } from 'lit/directive.js';
+import { directive } from 'lit/directive.js';
+import { LocalizeDirective } from './localize-directive.js';
 
-${localizeDirective}
 ${directivesCode}`;
 
   fs.writeFileSync("src/directives.js", generatedCode, "utf8");

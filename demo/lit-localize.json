@@ -3,11 +3,11 @@
   "sourceLocale": "en",
   "targetLocales": ["de-DE"],
   "inputFiles": [
-    "./demo/demo.js"
+    "./demo.js"
   ],
   "output": {
     "mode": "runtime",
-    "outputDir": "./demo/generated/locales",
+    "outputDir": "./generated/locales",
     "localeCodesModule": "./demo/generated/locales.js"
   },
   "interchange": {
