@@ -2,6 +2,7 @@ import "@vaadin/avatar";
 import "@vaadin/avatar-group";
 import "@vaadin/crud";
 import "@vaadin/date-picker";
+import "@vaadin/date-time-picker";
 import "@vaadin/login/vaadin-login-form.js";
 import "@vaadin/menu-bar";
 import "@vaadin/message-input";
@@ -17,6 +18,7 @@ import {
   localizeAvatarGroup,
   localizeCrud,
   localizeDatePicker,
+  localizeDateTimePicker,
   localizeLogin,
   localizeMenuBar,
   localizeMessageInput,
@@ -88,6 +90,10 @@ class VaadinLitLocalizeDemo extends LitElement {
         label="Localized Date Picker"
         ${localizeDatePicker()}
       ></vaadin-date-picker>
+      <vaadin-date-time-picker
+        label="Localized Date Time Picker"
+        ${localizeDateTimePicker()}
+      ></vaadin-date-time-picker>
       <br />
       <vaadin-login-form ${localizeLogin()}></vaadin-login-form>
       <br />

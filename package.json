@@ -21,6 +21,7 @@
     "@vaadin/avatar-group": "^23.1.4",
     "@vaadin/crud": "^23.1.4",
     "@vaadin/date-picker": "^23.1.4",
+    "@vaadin/date-time-picker": "^23.1.4",
     "@vaadin/login": "^23.1.4",
     "@vaadin/menu-bar": "^23.1.4",
     "@vaadin/message-input": "^23.1.4",

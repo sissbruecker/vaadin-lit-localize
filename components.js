@@ -4,6 +4,7 @@ export { Avatar } from "@vaadin/avatar";
 export { AvatarGroup } from "@vaadin/avatar-group";
 export { Crud } from "@vaadin/crud";
 export { DatePicker } from "@vaadin/date-picker";
+export { DateTimePicker } from "@vaadin/date-time-picker";
 export { LoginForm } from "@vaadin/login/vaadin-login-form.js";
 export { MenuBar } from "@vaadin/menu-bar";
 export { MessageInput } from "@vaadin/message-input";

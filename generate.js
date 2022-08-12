@@ -1,8 +1,8 @@
 const fs = require("fs");
-const { JSDOM } = require("jsdom");
+const {JSDOM} = require("jsdom");
 
 // Prepare JSDOM instance, load bundle containing shims and Vaadin components
-const dom = new JSDOM(``, { runScripts: "outside-only" });
+const dom = new JSDOM(``, {runScripts: "outside-only"});
 const shimsBundle = fs.readFileSync("shims.bundle.js", "utf8");
 const componentsBundle = fs.readFileSync("components.bundle.js", "utf8");
 dom.window.eval(shimsBundle);
@@ -51,20 +51,25 @@ function generateLocalizationJson(componentClass, messagePrefix) {
   return JSON.stringify(localizedI18n, null, 2);
 }
 
-function renderDirectiveCode(directiveName, componentClass, messagePrefix) {
+function capitalizeFirstLetter(string) {
+  return string.charAt(0).toUpperCase() + string.slice(1);
+}
+
+function renderDirectiveCode(directive) {
+  const directiveClassName = `${capitalizeFirstLetter(directive.name)}Directive`;
   const localizationJson = generateLocalizationJson(
-    componentClass,
-    messagePrefix
+    directive.component,
+    directive.prefix
   );
   // Remove quotes to turn json into actual JS expressions
   const localizationCode = localizationJson.replaceAll('"', "");
-  return `export class ${componentClass}Directive extends LocalizeDirective {
+  return `export class ${directiveClassName} extends LocalizeDirective {
   getLocalization() {
     return ${localizationCode}
   }
 }
 
-export const ${directiveName} = directive(${componentClass}Directive);
+export const ${directive.name} = directive(${directiveClassName});
 `;
 }
 
@@ -92,6 +97,14 @@ function run() {
     },
     {
       name: "localizeDatePicker",
+      component: "DatePicker",
+      prefix: "vaadin-date-picker",
+    },
+    // vaadin-date-time-picker combines i18n objects of vaadin-date-picker and vaadin-time-picker
+    // since vaadin-time-picker doesn't have any translation we can get by with just generating
+    // code for vaadin-date-picker again
+    {
+      name: "localizeDateTimePicker",
       component: "DatePicker",
       prefix: "vaadin-date-picker",
     },
@@ -134,7 +147,7 @@ function run() {
 
   const directivesCode = directives
     .map((directive) =>
-      renderDirectiveCode(directive.name, directive.component, directive.prefix)
+      renderDirectiveCode(directive)
     )
     .join("\n");
 

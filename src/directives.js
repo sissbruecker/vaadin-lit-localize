@@ -2,7 +2,7 @@ import { msg } from '@lit/localize';
 import { directive } from 'lit/directive.js';
 import { LocalizeDirective } from './localize-directive.js';
 
-export class AppLayoutDirective extends LocalizeDirective {
+export class LocalizeAppLayoutDirective extends LocalizeDirective {
   getLocalization() {
     return {
   drawer: msg('Drawer', { id: 'vaadin-app-layout.drawer' })
@@ -10,9 +10,9 @@ export class AppLayoutDirective extends LocalizeDirective {
   }
 }
 
-export const localizeAppLayout = directive(AppLayoutDirective);
+export const localizeAppLayout = directive(LocalizeAppLayoutDirective);
 
-export class AvatarDirective extends LocalizeDirective {
+export class LocalizeAvatarDirective extends LocalizeDirective {
   getLocalization() {
     return {
   anonymous: msg('anonymous', { id: 'vaadin-avatar.anonymous' })
@@ -20,9 +20,9 @@ export class AvatarDirective extends LocalizeDirective {
   }
 }
 
-export const localizeAvatar = directive(AvatarDirective);
+export const localizeAvatar = directive(LocalizeAvatarDirective);
 
-export class AvatarGroupDirective extends LocalizeDirective {
+export class LocalizeAvatarGroupDirective extends LocalizeDirective {
   getLocalization() {
     return {
   anonymous: msg('anonymous', { id: 'vaadin-avatar-group.anonymous' }),
@@ -36,9 +36,9 @@ export class AvatarGroupDirective extends LocalizeDirective {
   }
 }
 
-export const localizeAvatarGroup = directive(AvatarGroupDirective);
+export const localizeAvatarGroup = directive(LocalizeAvatarGroupDirective);
 
-export class CrudDirective extends LocalizeDirective {
+export class LocalizeCrudDirective extends LocalizeDirective {
   getLocalization() {
     return {
   newItem: msg('New item', { id: 'vaadin-crud.newItem' }),
@@ -69,9 +69,9 @@ export class CrudDirective extends LocalizeDirective {
   }
 }
 
-export const localizeCrud = directive(CrudDirective);
+export const localizeCrud = directive(LocalizeCrudDirective);
 
-export class DatePickerDirective extends LocalizeDirective {
+export class LocalizeDatePickerDirective extends LocalizeDirective {
   getLocalization() {
     return {
   monthNames: [
@@ -114,9 +114,54 @@ export class DatePickerDirective extends LocalizeDirective {
   }
 }
 
-export const localizeDatePicker = directive(DatePickerDirective);
+export const localizeDatePicker = directive(LocalizeDatePickerDirective);
 
-export class LoginFormDirective extends LocalizeDirective {
+export class LocalizeDateTimePickerDirective extends LocalizeDirective {
+  getLocalization() {
+    return {
+  monthNames: [
+    msg('January', { id: 'vaadin-date-picker.monthNames.0' }),
+    msg('February', { id: 'vaadin-date-picker.monthNames.1' }),
+    msg('March', { id: 'vaadin-date-picker.monthNames.2' }),
+    msg('April', { id: 'vaadin-date-picker.monthNames.3' }),
+    msg('May', { id: 'vaadin-date-picker.monthNames.4' }),
+    msg('June', { id: 'vaadin-date-picker.monthNames.5' }),
+    msg('July', { id: 'vaadin-date-picker.monthNames.6' }),
+    msg('August', { id: 'vaadin-date-picker.monthNames.7' }),
+    msg('September', { id: 'vaadin-date-picker.monthNames.8' }),
+    msg('October', { id: 'vaadin-date-picker.monthNames.9' }),
+    msg('November', { id: 'vaadin-date-picker.monthNames.10' }),
+    msg('December', { id: 'vaadin-date-picker.monthNames.11' })
+  ],
+  weekdays: [
+    msg('Sunday', { id: 'vaadin-date-picker.weekdays.0' }),
+    msg('Monday', { id: 'vaadin-date-picker.weekdays.1' }),
+    msg('Tuesday', { id: 'vaadin-date-picker.weekdays.2' }),
+    msg('Wednesday', { id: 'vaadin-date-picker.weekdays.3' }),
+    msg('Thursday', { id: 'vaadin-date-picker.weekdays.4' }),
+    msg('Friday', { id: 'vaadin-date-picker.weekdays.5' }),
+    msg('Saturday', { id: 'vaadin-date-picker.weekdays.6' })
+  ],
+  weekdaysShort: [
+    msg('Sun', { id: 'vaadin-date-picker.weekdaysShort.0' }),
+    msg('Mon', { id: 'vaadin-date-picker.weekdaysShort.1' }),
+    msg('Tue', { id: 'vaadin-date-picker.weekdaysShort.2' }),
+    msg('Wed', { id: 'vaadin-date-picker.weekdaysShort.3' }),
+    msg('Thu', { id: 'vaadin-date-picker.weekdaysShort.4' }),
+    msg('Fri', { id: 'vaadin-date-picker.weekdaysShort.5' }),
+    msg('Sat', { id: 'vaadin-date-picker.weekdaysShort.6' })
+  ],
+  week: msg('Week', { id: 'vaadin-date-picker.week' }),
+  calendar: msg('Calendar', { id: 'vaadin-date-picker.calendar' }),
+  today: msg('Today', { id: 'vaadin-date-picker.today' }),
+  cancel: msg('Cancel', { id: 'vaadin-date-picker.cancel' })
+}
+  }
+}
+
+export const localizeDateTimePicker = directive(LocalizeDateTimePickerDirective);
+
+export class LocalizeLoginDirective extends LocalizeDirective {
   getLocalization() {
     return {
   form: {
@@ -134,9 +179,9 @@ export class LoginFormDirective extends LocalizeDirective {
   }
 }
 
-export const localizeLogin = directive(LoginFormDirective);
+export const localizeLogin = directive(LocalizeLoginDirective);
 
-export class MenuBarDirective extends LocalizeDirective {
+export class LocalizeMenuBarDirective extends LocalizeDirective {
   getLocalization() {
     return {
   moreOptions: msg('More options', { id: 'vaadin-menu-bar.moreOptions' })
@@ -144,9 +189,9 @@ export class MenuBarDirective extends LocalizeDirective {
   }
 }
 
-export const localizeMenuBar = directive(MenuBarDirective);
+export const localizeMenuBar = directive(LocalizeMenuBarDirective);
 
-export class MessageInputDirective extends LocalizeDirective {
+export class LocalizeMessageInputDirective extends LocalizeDirective {
   getLocalization() {
     return {
   send: msg('Send', { id: 'vaadin-message-input.send' }),
@@ -155,9 +200,9 @@ export class MessageInputDirective extends LocalizeDirective {
   }
 }
 
-export const localizeMessageInput = directive(MessageInputDirective);
+export const localizeMessageInput = directive(LocalizeMessageInputDirective);
 
-export class MultiSelectComboBoxDirective extends LocalizeDirective {
+export class LocalizeMultiSelectComboBoxDirective extends LocalizeDirective {
   getLocalization() {
     return {
   cleared: msg('Selection cleared', { id: 'vaadin-multi-select-combo-box.cleared' }),
@@ -169,9 +214,9 @@ export class MultiSelectComboBoxDirective extends LocalizeDirective {
   }
 }
 
-export const localizeMultiSelectComboBox = directive(MultiSelectComboBoxDirective);
+export const localizeMultiSelectComboBox = directive(LocalizeMultiSelectComboBoxDirective);
 
-export class PasswordFieldDirective extends LocalizeDirective {
+export class LocalizePasswordFieldDirective extends LocalizeDirective {
   getLocalization() {
     return {
   reveal: msg('Show password', { id: 'vaadin-password-field.reveal' })
@@ -179,9 +224,9 @@ export class PasswordFieldDirective extends LocalizeDirective {
   }
 }
 
-export const localizePasswordField = directive(PasswordFieldDirective);
+export const localizePasswordField = directive(LocalizePasswordFieldDirective);
 
-export class RichTextEditorDirective extends LocalizeDirective {
+export class LocalizeRichTextEditorDirective extends LocalizeDirective {
   getLocalization() {
     return {
   undo: msg('undo', { id: 'vaadin-rich-text-editor.undo' }),
@@ -213,9 +258,9 @@ export class RichTextEditorDirective extends LocalizeDirective {
   }
 }
 
-export const localizeRichTextEditor = directive(RichTextEditorDirective);
+export const localizeRichTextEditor = directive(LocalizeRichTextEditorDirective);
 
-export class UploadDirective extends LocalizeDirective {
+export class LocalizeUploadDirective extends LocalizeDirective {
   getLocalization() {
     return {
   dropFiles: {
@@ -270,4 +315,4 @@ export class UploadDirective extends LocalizeDirective {
   }
 }
 
-export const localizeUpload = directive(UploadDirective);
+export const localizeUpload = directive(LocalizeUploadDirective);

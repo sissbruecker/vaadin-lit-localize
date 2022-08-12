@@ -591,7 +591,19 @@
     "@vaadin/vaadin-material-styles" "^23.1.5"
     "@vaadin/vaadin-themable-mixin" "^23.1.5"
 
-"@vaadin/date-picker@^23.1.4":
+"@vaadin/custom-field@^23.1.5":
+  version "23.1.5"
+  resolved "https://registry.yarnpkg.com/@vaadin/custom-field/-/custom-field-23.1.5.tgz#9215a4a9201fb04b6e0625b06b71a2a85c29e71a"
+  integrity sha512-aCJeWQrIpbguNXv28zukADrM207huTJQkrtQygGLz2VygPYmtCJrVWSk5aIv9AO3DGdlJ6/yqFQNqHb5NnbiEg==
+  dependencies:
+    "@polymer/polymer" "^3.0.0"
+    "@vaadin/component-base" "^23.1.5"
+    "@vaadin/field-base" "^23.1.5"
+    "@vaadin/vaadin-lumo-styles" "^23.1.5"
+    "@vaadin/vaadin-material-styles" "^23.1.5"
+    "@vaadin/vaadin-themable-mixin" "^23.1.5"
+
+"@vaadin/date-picker@^23.1.4", "@vaadin/date-picker@^23.1.5":
   version "23.1.5"
   resolved "https://registry.yarnpkg.com/@vaadin/date-picker/-/date-picker-23.1.5.tgz#fa3956dbdf096d082ed9ffbf5b70d5903d98100f"
   integrity sha512-j9MMAMs/5wnV4aHbhCwCMWbapZfjzdwba+UIVNCoiVzbZMPBE2X2lOpLKswFKmIzgsBtJ2HisOdTg2LaX3soKw==
@@ -605,6 +617,21 @@
     "@vaadin/vaadin-lumo-styles" "^23.1.5"
     "@vaadin/vaadin-material-styles" "^23.1.5"
     "@vaadin/vaadin-overlay" "^23.1.5"
+    "@vaadin/vaadin-themable-mixin" "^23.1.5"
+
+"@vaadin/date-time-picker@^23.1.4":
+  version "23.1.5"
+  resolved "https://registry.yarnpkg.com/@vaadin/date-time-picker/-/date-time-picker-23.1.5.tgz#5da2a2bc5a58ad1462d898737804b86c01c4d395"
+  integrity sha512-pljNueC9V8gfJWlMxOh8/uidgzjmwXY0Vjlgy2KAOvQPakTAlGszTBtnldFaNkyxPZQo2h35QdMPpUFbZe/lVw==
+  dependencies:
+    "@polymer/polymer" "^3.0.0"
+    "@vaadin/component-base" "^23.1.5"
+    "@vaadin/custom-field" "^23.1.5"
+    "@vaadin/date-picker" "^23.1.5"
+    "@vaadin/field-base" "^23.1.5"
+    "@vaadin/time-picker" "^23.1.5"
+    "@vaadin/vaadin-lumo-styles" "^23.1.5"
+    "@vaadin/vaadin-material-styles" "^23.1.5"
     "@vaadin/vaadin-themable-mixin" "^23.1.5"
 
 "@vaadin/dialog@^23.1.5":
@@ -844,6 +871,20 @@
   integrity sha512-Lp6HmQlqsK/D301BTqRJd1Ao6zjaPZGP4zoWVAXsXg17ad6ETn1G5g03uN/Xd3J+uEbXABvSO6ID1o6kk+HXug==
   dependencies:
     "@polymer/polymer" "^3.0.0"
+    "@vaadin/component-base" "^23.1.5"
+    "@vaadin/field-base" "^23.1.5"
+    "@vaadin/input-container" "^23.1.5"
+    "@vaadin/vaadin-lumo-styles" "^23.1.5"
+    "@vaadin/vaadin-material-styles" "^23.1.5"
+    "@vaadin/vaadin-themable-mixin" "^23.1.5"
+
+"@vaadin/time-picker@^23.1.5":
+  version "23.1.5"
+  resolved "https://registry.yarnpkg.com/@vaadin/time-picker/-/time-picker-23.1.5.tgz#38ed31871ea88f61aefa90d8d3791fadfbafd318"
+  integrity sha512-JgbJ4Vrc6yhPx9p5+PJoIzEelpZE+eJekUD2+6Z3xzEUe4SdRe1jNCDcGw9ziDkXggPV6ZxUW4z1nC/vIUoT6A==
+  dependencies:
+    "@polymer/polymer" "^3.0.0"
+    "@vaadin/combo-box" "^23.1.5"
     "@vaadin/component-base" "^23.1.5"
     "@vaadin/field-base" "^23.1.5"
     "@vaadin/input-container" "^23.1.5"
