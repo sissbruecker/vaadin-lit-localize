@@ -121,6 +121,11 @@ function run() {
       prefix: "vaadin-password-field",
     },
     {
+      name: "localizeRichTextEditor",
+      component: "RichTextEditor",
+      prefix: "vaadin-rich-text-editor",
+    },
+    {
       name: "localizeUpload",
       component: "Upload",
       prefix: "vaadin-upload",

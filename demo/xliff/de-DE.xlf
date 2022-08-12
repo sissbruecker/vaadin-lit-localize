@@ -270,6 +270,106 @@
   <source>Show password</source>
   <target>Passwort anzeigen</target>
 </trans-unit>
+<trans-unit id="vaadin-rich-text-editor.undo">
+  <source>undo</source>
+  <target>Rückgängig</target>
+</trans-unit>
+<trans-unit id="vaadin-rich-text-editor.redo">
+  <source>redo</source>
+  <target>Wiederholen</target>
+</trans-unit>
+<trans-unit id="vaadin-rich-text-editor.bold">
+  <source>bold</source>
+  <target>Fett</target>
+</trans-unit>
+<trans-unit id="vaadin-rich-text-editor.italic">
+  <source>italic</source>
+  <target>Kursiv</target>
+</trans-unit>
+<trans-unit id="vaadin-rich-text-editor.underline">
+  <source>underline</source>
+  <target>Unterstrichen</target>
+</trans-unit>
+<trans-unit id="vaadin-rich-text-editor.strike">
+  <source>strike</source>
+  <target>Durchgestrichen</target>
+</trans-unit>
+<trans-unit id="vaadin-rich-text-editor.h1">
+  <source>h1</source>
+  <target>h1</target>
+</trans-unit>
+<trans-unit id="vaadin-rich-text-editor.h2">
+  <source>h2</source>
+  <target>h2</target>
+</trans-unit>
+<trans-unit id="vaadin-rich-text-editor.h3">
+  <source>h3</source>
+  <target>h3</target>
+</trans-unit>
+<trans-unit id="vaadin-rich-text-editor.subscript">
+  <source>subscript</source>
+  <target>Tiefgestellt</target>
+</trans-unit>
+<trans-unit id="vaadin-rich-text-editor.superscript">
+  <source>superscript</source>
+  <target>Hochgestellt</target>
+</trans-unit>
+<trans-unit id="vaadin-rich-text-editor.listOrdered">
+  <source>list ordered</source>
+  <target>Geordnete Liste</target>
+</trans-unit>
+<trans-unit id="vaadin-rich-text-editor.listBullet">
+  <source>list bullet</source>
+  <target>Ungeordnete Liste</target>
+</trans-unit>
+<trans-unit id="vaadin-rich-text-editor.alignLeft">
+  <source>align left</source>
+  <target>Links anordnen</target>
+</trans-unit>
+<trans-unit id="vaadin-rich-text-editor.alignCenter">
+  <source>align center</source>
+  <target>Mittig anordnen</target>
+</trans-unit>
+<trans-unit id="vaadin-rich-text-editor.alignRight">
+  <source>align right</source>
+  <target>Rechts anordnen</target>
+</trans-unit>
+<trans-unit id="vaadin-rich-text-editor.image">
+  <source>image</source>
+  <target>Bild</target>
+</trans-unit>
+<trans-unit id="vaadin-rich-text-editor.link">
+  <source>link</source>
+  <target>Link</target>
+</trans-unit>
+<trans-unit id="vaadin-rich-text-editor.blockquote">
+  <source>blockquote</source>
+  <target>Zitat</target>
+</trans-unit>
+<trans-unit id="vaadin-rich-text-editor.codeBlock">
+  <source>code block</source>
+  <target>Code Block</target>
+</trans-unit>
+<trans-unit id="vaadin-rich-text-editor.clean">
+  <source>clean</source>
+  <target>Format löschen</target>
+</trans-unit>
+<trans-unit id="vaadin-rich-text-editor.linkDialogTitle">
+  <source>Link address</source>
+  <target>Link Adresse</target>
+</trans-unit>
+<trans-unit id="vaadin-rich-text-editor.ok">
+  <source>OK</source>
+  <target>OK</target>
+</trans-unit>
+<trans-unit id="vaadin-rich-text-editor.cancel">
+  <source>Cancel</source>
+  <target>Abbrechen</target>
+</trans-unit>
+<trans-unit id="vaadin-rich-text-editor.remove">
+  <source>Remove</source>
+  <target>Entfernen</target>
+</trans-unit>
 <trans-unit id="vaadin-upload.dropFiles.one">
   <source>Drop file here</source>
   <target>Datei hierher ziehen</target>

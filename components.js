@@ -9,4 +9,5 @@ export { MenuBar } from "@vaadin/menu-bar";
 export { MessageInput } from "@vaadin/message-input";
 export { MultiSelectComboBox } from "@vaadin/multi-select-combo-box";
 export { PasswordField } from "@vaadin/password-field";
+export { RichTextEditor } from "@vaadin/rich-text-editor";
 export { Upload } from "@vaadin/upload";

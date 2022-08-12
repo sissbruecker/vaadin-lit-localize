@@ -7,6 +7,7 @@ import "@vaadin/menu-bar";
 import "@vaadin/message-input";
 import "@vaadin/multi-select-combo-box";
 import "@vaadin/password-field";
+import "@vaadin/rich-text-editor";
 import "@vaadin/select";
 import "@vaadin/upload";
 import { render, html, LitElement } from "lit";
@@ -21,6 +22,7 @@ import {
   localizeMessageInput,
   localizeMultiSelectComboBox,
   localizePasswordField,
+  localizeRichTextEditor,
   localizeUpload,
 } from "../src/directives";
 import {
@@ -109,6 +111,8 @@ class VaadinLitLocalizeDemo extends LitElement {
       ></vaadin-multi-select-combo-box>
       <br />
       <vaadin-password-field ${localizePasswordField()}></vaadin-password-field>
+      <br />
+      <vaadin-rich-text-editor ${localizeRichTextEditor()}></vaadin-rich-text-editor>
       <br />
       <vaadin-upload ${localizeUpload()} no-auto max-files="3"></vaadin-upload>
     `;

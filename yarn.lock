@@ -791,6 +791,21 @@
     "@vaadin/vaadin-material-styles" "^23.1.5"
     "@vaadin/vaadin-themable-mixin" "^23.1.5"
 
+"@vaadin/rich-text-editor@^23.1.4":
+  version "23.1.5"
+  resolved "https://registry.yarnpkg.com/@vaadin/rich-text-editor/-/rich-text-editor-23.1.5.tgz#865bc6671d6c6a96d36f828fd330fc6e7493b4c4"
+  integrity sha512-StcAPLAVM5sVPjKXcpiojj9ft2E+czRgq9kkE71vCLCu5J3IFQm8JFBlx3Q855X6b3q6NoYK2wIx4FmMMr9wOg==
+  dependencies:
+    "@polymer/polymer" "^3.0.0"
+    "@vaadin/button" "^23.1.5"
+    "@vaadin/component-base" "^23.1.5"
+    "@vaadin/confirm-dialog" "^23.1.5"
+    "@vaadin/text-field" "^23.1.5"
+    "@vaadin/vaadin-license-checker" "^2.1.0"
+    "@vaadin/vaadin-lumo-styles" "^23.1.5"
+    "@vaadin/vaadin-material-styles" "^23.1.5"
+    "@vaadin/vaadin-themable-mixin" "^23.1.5"
+
 "@vaadin/select@^23.1.4":
   version "23.1.5"
   resolved "https://registry.yarnpkg.com/@vaadin/select/-/select-23.1.5.tgz#4b1a29ecdec5016c11f7b9920efdc43700481999"

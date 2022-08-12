@@ -181,6 +181,40 @@ export class PasswordFieldDirective extends LocalizeDirective {
 
 export const localizePasswordField = directive(PasswordFieldDirective);
 
+export class RichTextEditorDirective extends LocalizeDirective {
+  getLocalization() {
+    return {
+  undo: msg('undo', { id: 'vaadin-rich-text-editor.undo' }),
+  redo: msg('redo', { id: 'vaadin-rich-text-editor.redo' }),
+  bold: msg('bold', { id: 'vaadin-rich-text-editor.bold' }),
+  italic: msg('italic', { id: 'vaadin-rich-text-editor.italic' }),
+  underline: msg('underline', { id: 'vaadin-rich-text-editor.underline' }),
+  strike: msg('strike', { id: 'vaadin-rich-text-editor.strike' }),
+  h1: msg('h1', { id: 'vaadin-rich-text-editor.h1' }),
+  h2: msg('h2', { id: 'vaadin-rich-text-editor.h2' }),
+  h3: msg('h3', { id: 'vaadin-rich-text-editor.h3' }),
+  subscript: msg('subscript', { id: 'vaadin-rich-text-editor.subscript' }),
+  superscript: msg('superscript', { id: 'vaadin-rich-text-editor.superscript' }),
+  listOrdered: msg('list ordered', { id: 'vaadin-rich-text-editor.listOrdered' }),
+  listBullet: msg('list bullet', { id: 'vaadin-rich-text-editor.listBullet' }),
+  alignLeft: msg('align left', { id: 'vaadin-rich-text-editor.alignLeft' }),
+  alignCenter: msg('align center', { id: 'vaadin-rich-text-editor.alignCenter' }),
+  alignRight: msg('align right', { id: 'vaadin-rich-text-editor.alignRight' }),
+  image: msg('image', { id: 'vaadin-rich-text-editor.image' }),
+  link: msg('link', { id: 'vaadin-rich-text-editor.link' }),
+  blockquote: msg('blockquote', { id: 'vaadin-rich-text-editor.blockquote' }),
+  codeBlock: msg('code block', { id: 'vaadin-rich-text-editor.codeBlock' }),
+  clean: msg('clean', { id: 'vaadin-rich-text-editor.clean' }),
+  linkDialogTitle: msg('Link address', { id: 'vaadin-rich-text-editor.linkDialogTitle' }),
+  ok: msg('OK', { id: 'vaadin-rich-text-editor.ok' }),
+  cancel: msg('Cancel', { id: 'vaadin-rich-text-editor.cancel' }),
+  remove: msg('Remove', { id: 'vaadin-rich-text-editor.remove' })
+}
+  }
+}
+
+export const localizeRichTextEditor = directive(RichTextEditorDirective);
+
 export class UploadDirective extends LocalizeDirective {
   getLocalization() {
     return {
