@@ -8,4 +8,5 @@ export { LoginForm } from "@vaadin/login/vaadin-login-form.js";
 export { MenuBar } from "@vaadin/menu-bar";
 export { MessageInput } from "@vaadin/message-input";
 export { MultiSelectComboBox } from "@vaadin/multi-select-combo-box";
+export { PasswordField } from "@vaadin/password-field";
 export { Upload } from "@vaadin/upload";

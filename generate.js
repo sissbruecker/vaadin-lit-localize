@@ -116,6 +116,11 @@ function run() {
       prefix: "vaadin-multi-select-combo-box",
     },
     {
+      name: "localizePasswordField",
+      component: "PasswordField",
+      prefix: "vaadin-password-field",
+    },
+    {
       name: "localizeUpload",
       component: "Upload",
       prefix: "vaadin-upload",

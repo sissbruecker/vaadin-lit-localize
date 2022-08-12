@@ -266,6 +266,10 @@
   <source>{count} items selected</source>
   <target>{count} Einträge ausgewählt</target>
 </trans-unit>
+<trans-unit id="vaadin-password-field.reveal">
+  <source>Show password</source>
+  <target>Passwort anzeigen</target>
+</trans-unit>
 <trans-unit id="vaadin-upload.dropFiles.one">
   <source>Drop file here</source>
   <target>Datei hierher ziehen</target>

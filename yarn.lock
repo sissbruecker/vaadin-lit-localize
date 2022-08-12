@@ -768,7 +768,7 @@
     "@vaadin/vaadin-material-styles" "^23.1.5"
     "@vaadin/vaadin-themable-mixin" "^23.1.5"
 
-"@vaadin/password-field@^23.1.5":
+"@vaadin/password-field@^23.1.4", "@vaadin/password-field@^23.1.5":
   version "23.1.5"
   resolved "https://registry.yarnpkg.com/@vaadin/password-field/-/password-field-23.1.5.tgz#ce13fe8d8fad56fd6bea8489dffc36669d550660"
   integrity sha512-v07OQhWxlezb+Xi9h4rTtwWo8hhoStwi2u6WIl5O+7Y2YRLWMeV4YTAzTMjHIMR98z9Q5gMuAP7jGddEIdFQrw==
