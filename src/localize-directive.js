@@ -1,6 +1,6 @@
-import { nothing } from 'lit';
-import { AsyncDirective } from 'lit/async-directive.js';
-import { PartType } from 'lit/directive.js';
+import { nothing } from "lit";
+import { AsyncDirective } from "lit/async-directive.js";
+import { PartType } from "lit/directive.js";
 
 export class LocalizeDirective extends AsyncDirective {
   constructor(part) {
@@ -19,22 +19,33 @@ export class LocalizeDirective extends AsyncDirective {
     return nothing;
   }
 
-  update(part) {
-    if (this.__currentLocale === this.__lastRenderedLocale) return nothing;
+  update(part, [overrides]) {
+    const hasLocaleChanged = this.__currentLocale !== this.__lastRenderedLocale;
+    const hasOverridesChanged = overrides !== this.__previousOverrides;
+
+    if (!hasLocaleChanged && !hasOverridesChanged) {
+      return nothing;
+    }
 
     this.__element = part.element;
     this.__lastRenderedLocale = this.__currentLocale;
+    this.__previousOverrides = overrides;
     this.registerLocaleChangeHandler();
-    this.refreshI18n();
+    this.refreshI18n(overrides);
 
     return nothing;
   }
 
-  refreshI18n() {
+  refreshI18n(overrides) {
+    if (!this.__originalI18n) {
+      this.__originalI18n = this.__element.i18n || {};
+    }
     const translation = this.getTranslation();
+    overrides = overrides || {};
     this.__element.i18n = {
-      ...this.__element.i18n,
+      ...this.__originalI18n,
       ...translation,
+      ...overrides,
     };
   }
 
