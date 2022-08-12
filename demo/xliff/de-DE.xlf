@@ -6,6 +6,26 @@
   <source>anonymous</source>
   <target>Anonym</target>
 </trans-unit>
+<trans-unit id="vaadin-avatar-group.anonymous">
+  <source>anonymous</source>
+  <target>Anonym</target>
+</trans-unit>
+<trans-unit id="vaadin-avatar-group.activeUsers.one">
+  <source>Currently one active user</source>
+  <target>Aktuell ein aktiver Nutzer</target>
+</trans-unit>
+<trans-unit id="vaadin-avatar-group.activeUsers.many">
+  <source>Currently {count} active users</source>
+  <target>Aktuell {count} aktive Nutzer</target>
+</trans-unit>
+<trans-unit id="vaadin-avatar-group.joined">
+  <source>{user} joined</source>
+  <target>{user} ist der Sitzung beigetreten</target>
+</trans-unit>
+<trans-unit id="vaadin-avatar-group.left">
+  <source>{user} left</source>
+  <target>{user} has die Sitzung verlassen</target>
+</trans-unit>
 <trans-unit id="vaadin-date-picker.monthNames.0">
   <source>January</source>
   <target>Januar</target>

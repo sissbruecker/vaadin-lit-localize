@@ -1,10 +1,12 @@
 const fs = require("fs");
 const { JSDOM } = require("jsdom");
 
-// Prepare JSDOM instance, load bundle containing Vaadin components
+// Prepare JSDOM instance, load bundle containing shims and Vaadin components
 const dom = new JSDOM(``, { runScripts: "outside-only" });
-const bundle = fs.readFileSync("bundle.js", "utf8");
-dom.window.eval(bundle);
+const shimsBundle = fs.readFileSync("shims.bundle.js", "utf8");
+const componentsBundle = fs.readFileSync("components.bundle.js", "utf8");
+dom.window.eval(shimsBundle);
+dom.window.eval(componentsBundle);
 
 function isObject(value) {
   return !!value && value.constructor === Object;
@@ -42,7 +44,7 @@ function localizeI18n(prefix, value) {
 }
 
 function generateLocalizationJson(componentClass, messagePrefix) {
-  let defaultI18n = dom.window.eval(`new bundle.${componentClass}().i18n`);
+  let defaultI18n = dom.window.eval(`new components.${componentClass}().i18n`);
   defaultI18n = JSON.parse(JSON.stringify(defaultI18n));
   const localizedI18n = localizeI18n(messagePrefix, defaultI18n);
 
@@ -72,6 +74,11 @@ function run() {
       name: "localizeAvatar",
       component: "Avatar",
       prefix: "vaadin-avatar",
+    },
+    {
+      name: "localizeAvatarGroup",
+      component: "AvatarGroup",
+      prefix: "vaadin-avatar-group",
     },
     {
       name: "localizeDatePicker",

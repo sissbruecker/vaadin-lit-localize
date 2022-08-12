@@ -16,15 +16,17 @@
   "devDependencies": {
     "@lit/localize-tools": "^0.6.4",
     "@open-wc/testing": "^3.1.6",
-    "@vaadin/avatar": "23.1.4",
-    "@vaadin/date-picker": "23.1.4",
-    "@vaadin/login": "23.1.4",
-    "@vaadin/select": "23.1.4",
-    "@vaadin/upload": "23.1.4",
+    "@vaadin/avatar": "^23.1.4",
+    "@vaadin/avatar-group": "^23.1.4",
+    "@vaadin/date-picker": "^23.1.4",
+    "@vaadin/login": "^23.1.4",
+    "@vaadin/select": "^23.1.4",
+    "@vaadin/upload": "^23.1.4",
     "@web/dev-server": "^0.1.32",
     "@web/test-runner": "^0.14.0",
     "jsdom": "^20.0.0",
     "prettier": "^2.7.1",
+    "resize-observer-polyfill": "^1.5.1",
     "rollup": "^2.77.0",
     "rollup-plugin-node-resolve": "^5.2.0"
   }

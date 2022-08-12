@@ -12,6 +12,22 @@ export class AvatarDirective extends LocalizeDirective {
 
 export const localizeAvatar = directive(AvatarDirective);
 
+export class AvatarGroupDirective extends LocalizeDirective {
+  getLocalization() {
+    return {
+  anonymous: msg('anonymous', { id: 'vaadin-avatar-group.anonymous' }),
+  activeUsers: {
+    one: msg('Currently one active user', { id: 'vaadin-avatar-group.activeUsers.one' }),
+    many: msg('Currently {count} active users', { id: 'vaadin-avatar-group.activeUsers.many' })
+  },
+  joined: msg('{user} joined', { id: 'vaadin-avatar-group.joined' }),
+  left: msg('{user} left', { id: 'vaadin-avatar-group.left' })
+}
+  }
+}
+
+export const localizeAvatarGroup = directive(AvatarGroupDirective);
+
 export class DatePickerDirective extends LocalizeDirective {
   getLocalization() {
     return {
