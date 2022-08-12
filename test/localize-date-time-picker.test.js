@@ -1,7 +1,7 @@
 import { html, fixture, expect } from "@open-wc/testing";
 import { configureLocalization } from "@lit/localize";
 import "@vaadin/date-time-picker";
-import { localizeDateTimePicker } from "../src/directives.js";
+import { localize, localizeDateTimePicker } from "../src";
 
 const germanLocale = {
   templates: {
@@ -38,42 +38,54 @@ const germanLocale = {
   },
 };
 
-describe("localizeDateTimePicker", () => {
-  let dateTimePicker;
-  let localization;
+const localization = configureLocalization({
+  sourceLocale: "en",
+  targetLocales: ["de"],
+  loadLocale: () => Promise.resolve(germanLocale),
+});
 
-  before(async () => {
-    localization = configureLocalization({
-      sourceLocale: "en",
-      targetLocales: ["de"],
-      loadLocale: () => Promise.resolve(germanLocale),
+[
+  ["localize", localize],
+  ["localizeDateTimePicker", localizeDateTimePicker],
+].forEach((directive) => {
+  const [directiveName, directiveFn] = directive;
+  describe(directiveName, () => {
+    let dateTimePicker;
+
+    before(async () => {
+      dateTimePicker = await fixture(html`
+        <vaadin-date-time-picker
+          ${directiveFn()}
+        ></vaadin-date-time-picker>
+      `);
     });
-    dateTimePicker = await fixture(html`
-      <vaadin-date-time-picker ${localizeDateTimePicker()}></vaadin-date-time-picker>
-    `);
-  });
 
-  it("should use default i18n values", () => {
-    expect(dateTimePicker.i18n.week).to.equal("Week");
-    expect(dateTimePicker.i18n.today).to.equal("Today");
-    expect(dateTimePicker.i18n.monthNames[0]).to.equal("January");
-    expect(dateTimePicker.i18n.monthNames[5]).to.equal("June");
-    expect(dateTimePicker.i18n.weekdays[0]).to.equal("Sunday");
-    expect(dateTimePicker.i18n.weekdays[5]).to.equal("Friday");
-    expect(dateTimePicker.i18n.weekdaysShort[0]).to.equal("Sun");
-    expect(dateTimePicker.i18n.weekdaysShort[5]).to.equal("Fri");
-  });
+    after(async () => {
+      await localization.setLocale("en");
+    });
 
-  it("should use localized i18n values when changing locale", async () => {
-    await localization.setLocale("de");
+    it("should use default i18n values", () => {
+      expect(dateTimePicker.i18n.week).to.equal("Week");
+      expect(dateTimePicker.i18n.today).to.equal("Today");
+      expect(dateTimePicker.i18n.monthNames[0]).to.equal("January");
+      expect(dateTimePicker.i18n.monthNames[5]).to.equal("June");
+      expect(dateTimePicker.i18n.weekdays[0]).to.equal("Sunday");
+      expect(dateTimePicker.i18n.weekdays[5]).to.equal("Friday");
+      expect(dateTimePicker.i18n.weekdaysShort[0]).to.equal("Sun");
+      expect(dateTimePicker.i18n.weekdaysShort[5]).to.equal("Fri");
+    });
 
-    expect(dateTimePicker.i18n.week).to.equal("Woche");
-    expect(dateTimePicker.i18n.today).to.equal("Heute");
-    expect(dateTimePicker.i18n.monthNames[0]).to.equal("Januar");
-    expect(dateTimePicker.i18n.monthNames[5]).to.equal("Juni");
-    expect(dateTimePicker.i18n.weekdays[0]).to.equal("Sonntag");
-    expect(dateTimePicker.i18n.weekdays[5]).to.equal("Freitag");
-    expect(dateTimePicker.i18n.weekdaysShort[0]).to.equal("So");
-    expect(dateTimePicker.i18n.weekdaysShort[5]).to.equal("Fr");
+    it("should use localized i18n values when changing locale", async () => {
+      await localization.setLocale("de");
+
+      expect(dateTimePicker.i18n.week).to.equal("Woche");
+      expect(dateTimePicker.i18n.today).to.equal("Heute");
+      expect(dateTimePicker.i18n.monthNames[0]).to.equal("Januar");
+      expect(dateTimePicker.i18n.monthNames[5]).to.equal("Juni");
+      expect(dateTimePicker.i18n.weekdays[0]).to.equal("Sonntag");
+      expect(dateTimePicker.i18n.weekdays[5]).to.equal("Freitag");
+      expect(dateTimePicker.i18n.weekdaysShort[0]).to.equal("So");
+      expect(dateTimePicker.i18n.weekdaysShort[5]).to.equal("Fr");
+    });
   });
 });

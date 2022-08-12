@@ -1,7 +1,7 @@
 import { configureLocalization } from "@lit/localize";
 import { html, fixture, expect } from "@open-wc/testing";
 import "@vaadin/avatar-group";
-import { localizeAvatarGroup } from "../src/directives.js";
+import { localize, localizeAvatarGroup } from "../src";
 
 const germanLocale = {
   templates: {
@@ -13,34 +13,52 @@ const germanLocale = {
   },
 };
 
-describe("localizeAvatarGroup", () => {
-  let avatarGroup;
-  let localization;
+const localization = configureLocalization({
+  sourceLocale: "en",
+  targetLocales: ["de"],
+  loadLocale: () => Promise.resolve(germanLocale),
+});
 
-  before(async () => {
-    localization = configureLocalization({
-      sourceLocale: "en",
-      targetLocales: ["de"],
-      loadLocale: () => Promise.resolve(germanLocale),
+[
+  ["localize", localize],
+  ["localizeAvatarGroup", localizeAvatarGroup],
+].forEach((directive) => {
+  const [directiveName, directiveFn] = directive;
+  describe(directiveName, () => {
+    let avatarGroup;
+
+    before(async () => {
+      avatarGroup = await fixture(html`
+        <vaadin-avatar-group ${directiveFn()}></vaadin-avatar-group>
+      `);
     });
-    avatarGroup = await fixture(html`
-      <vaadin-avatar-group ${localizeAvatarGroup()}></vaadin-avatar-group>
-    `);
-  });
 
-  it("should use default i18n values", () => {
-    expect(avatarGroup.i18n.anonymous).to.equal("anonymous");
-    expect(avatarGroup.i18n.activeUsers.one).to.equal("Currently one active user");
-    expect(avatarGroup.i18n.joined).to.equal("{user} joined");
-    expect(avatarGroup.i18n.left).to.equal("{user} left");
-  });
+    after(async () => {
+      await localization.setLocale("en");
+    });
 
-  it("should use localized i18n values when changing locale", async () => {
-    await localization.setLocale("de");
+    it("should use default i18n values", () => {
+      expect(avatarGroup.i18n.anonymous).to.equal("anonymous");
+      expect(avatarGroup.i18n.activeUsers.one).to.equal(
+        "Currently one active user"
+      );
+      expect(avatarGroup.i18n.joined).to.equal("{user} joined");
+      expect(avatarGroup.i18n.left).to.equal("{user} left");
+    });
 
-    expect(avatarGroup.i18n.anonymous).to.equal("Anonym");
-    expect(avatarGroup.i18n.activeUsers.one).to.equal("Aktuell ein aktiver Nutzer");
-    expect(avatarGroup.i18n.joined).to.equal("{user} ist der Sitzung beigetreten");
-    expect(avatarGroup.i18n.left).to.equal("{user} has die Sitzung verlassen");
+    it("should use localized i18n values when changing locale", async () => {
+      await localization.setLocale("de");
+
+      expect(avatarGroup.i18n.anonymous).to.equal("Anonym");
+      expect(avatarGroup.i18n.activeUsers.one).to.equal(
+        "Aktuell ein aktiver Nutzer"
+      );
+      expect(avatarGroup.i18n.joined).to.equal(
+        "{user} ist der Sitzung beigetreten"
+      );
+      expect(avatarGroup.i18n.left).to.equal(
+        "{user} has die Sitzung verlassen"
+      );
+    });
   });
 });

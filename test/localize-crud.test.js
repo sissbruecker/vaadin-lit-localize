@@ -1,7 +1,7 @@
 import { configureLocalization } from "@lit/localize";
 import { html, fixture, expect } from "@open-wc/testing";
 import "@vaadin/crud";
-import { localizeCrud } from "../src/directives.js";
+import { localize, localizeCrud } from "../src";
 
 const germanLocale = {
   templates: {
@@ -22,36 +22,48 @@ const germanLocale = {
   },
 };
 
-describe("localizeCrud", () => {
-  let crud;
-  let localization;
+const localization = configureLocalization({
+  sourceLocale: "en",
+  targetLocales: ["de"],
+  loadLocale: () => Promise.resolve(germanLocale),
+});
 
-  before(async () => {
-    localization = configureLocalization({
-      sourceLocale: "en",
-      targetLocales: ["de"],
-      loadLocale: () => Promise.resolve(germanLocale),
+[
+  ["localize", localize],
+  ["localizeCrud", localizeCrud],
+].forEach((directive) => {
+  const [directiveName, directiveFn] = directive;
+  describe(directiveName, () => {
+    let crud;
+
+    before(async () => {
+      crud = await fixture(html`
+        <vaadin-crud ${directiveFn()}></vaadin-crud>
+      `);
     });
-    crud = await fixture(html` <vaadin-crud ${localizeCrud()}></vaadin-crud> `);
-  });
 
-  it("should use default i18n values", () => {
-    expect(crud.i18n.newItem).to.equal("New item");
-    expect(crud.i18n.deleteItem).to.equal("Delete...");
-    expect(crud.i18n.confirm.cancel.title).to.equal("Discard changes");
-    expect(crud.i18n.confirm.cancel.button.confirm).to.equal("Discard");
-    expect(crud.i18n.confirm.delete.title).to.equal("Delete item");
-    expect(crud.i18n.confirm.delete.button.confirm).to.equal("Delete");
-  });
+    after(async () => {
+      await localization.setLocale("en");
+    });
 
-  it("should use localized i18n values when changing locale", async () => {
-    await localization.setLocale("de");
+    it("should use default i18n values", () => {
+      expect(crud.i18n.newItem).to.equal("New item");
+      expect(crud.i18n.deleteItem).to.equal("Delete...");
+      expect(crud.i18n.confirm.cancel.title).to.equal("Discard changes");
+      expect(crud.i18n.confirm.cancel.button.confirm).to.equal("Discard");
+      expect(crud.i18n.confirm.delete.title).to.equal("Delete item");
+      expect(crud.i18n.confirm.delete.button.confirm).to.equal("Delete");
+    });
 
-    expect(crud.i18n.newItem).to.equal("Neu");
-    expect(crud.i18n.deleteItem).to.equal("Löschen...");
-    expect(crud.i18n.confirm.cancel.title).to.equal("Änderungen verwerfen");
-    expect(crud.i18n.confirm.cancel.button.confirm).to.equal("Verwerfen");
-    expect(crud.i18n.confirm.delete.title).to.equal("Eintrag löschen");
-    expect(crud.i18n.confirm.delete.button.confirm).to.equal("Löschen");
+    it("should use localized i18n values when changing locale", async () => {
+      await localization.setLocale("de");
+
+      expect(crud.i18n.newItem).to.equal("Neu");
+      expect(crud.i18n.deleteItem).to.equal("Löschen...");
+      expect(crud.i18n.confirm.cancel.title).to.equal("Änderungen verwerfen");
+      expect(crud.i18n.confirm.cancel.button.confirm).to.equal("Verwerfen");
+      expect(crud.i18n.confirm.delete.title).to.equal("Eintrag löschen");
+      expect(crud.i18n.confirm.delete.button.confirm).to.equal("Löschen");
+    });
   });
 });

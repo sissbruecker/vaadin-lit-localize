@@ -1,36 +1,46 @@
 import { configureLocalization } from "@lit/localize";
 import { html, fixture, expect } from "@open-wc/testing";
 import "@vaadin/avatar";
-import { localizeAvatar } from "../src/directives.js";
+import { localize, localizeAvatar } from "../src";
 
 const germanLocale = {
   templates: {
-    'vaadin-avatar.anonymous': `Anonym`,
+    "vaadin-avatar.anonymous": `Anonym`,
   },
 };
 
-describe("localizeAvatar", () => {
-  let avatar;
-  let localization;
+const localization = configureLocalization({
+  sourceLocale: "en",
+  targetLocales: ["de"],
+  loadLocale: () => Promise.resolve(germanLocale),
+});
 
-  before(async () => {
-    localization = configureLocalization({
-      sourceLocale: "en",
-      targetLocales: ["de"],
-      loadLocale: () => Promise.resolve(germanLocale),
+[
+  ["localize", localize],
+  ["localizeAvatar", localizeAvatar],
+].forEach((directive) => {
+  const [directiveName, directiveFn] = directive;
+  describe(directiveName, () => {
+    let avatar;
+
+    before(async () => {
+      avatar = await fixture(html`
+        <vaadin-avatar ${directiveFn()}></vaadin-avatar>
+      `);
     });
-    avatar = await fixture(html`
-      <vaadin-avatar ${localizeAvatar()}></vaadin-avatar>
-    `);
-  });
 
-  it("should use default i18n values", () => {
-    expect(avatar.i18n.anonymous).to.equal("anonymous");
-  });
+    after(async () => {
+      await localization.setLocale("en");
+    });
 
-  it("should use localized i18n values when changing locale", async () => {
-    await localization.setLocale("de");
+    it("should use default i18n values", () => {
+      expect(avatar.i18n.anonymous).to.equal("anonymous");
+    });
 
-    expect(avatar.i18n.anonymous).to.equal("Anonym");
+    it("should use localized i18n values when changing locale", async () => {
+      await localization.setLocale("de");
+
+      expect(avatar.i18n.anonymous).to.equal("Anonym");
+    });
   });
 });

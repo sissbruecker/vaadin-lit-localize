@@ -31,14 +31,14 @@ export class LocalizeDirective extends AsyncDirective {
   }
 
   refreshI18n() {
-    const localization = this.getLocalization();
+    const translation = this.getTranslation();
     this.__element.i18n = {
       ...this.__element.i18n,
-      ...localization,
+      ...translation,
     };
   }
 
-  getLocalization() {
+  getTranslation() {
     throw new Error("getLocalization must be implemented by sub-class");
   }
 

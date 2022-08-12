@@ -1,36 +1,46 @@
 import { configureLocalization } from "@lit/localize";
 import { html, fixture, expect } from "@open-wc/testing";
 import "@vaadin/app-layout";
-import { localizeAppLayout } from "../src/directives.js";
+import { localize, localizeAppLayout } from "../src";
 
 const germanLocale = {
   templates: {
-    'vaadin-app-layout.drawer': `Menuleiste`,
+    "vaadin-app-layout.drawer": `Menuleiste`,
   },
 };
 
-describe("localizeAppLayout", () => {
-  let appLayout;
-  let localization;
+const localization = configureLocalization({
+  sourceLocale: "en",
+  targetLocales: ["de"],
+  loadLocale: () => Promise.resolve(germanLocale),
+});
 
-  before(async () => {
-    localization = configureLocalization({
-      sourceLocale: "en",
-      targetLocales: ["de"],
-      loadLocale: () => Promise.resolve(germanLocale),
+[
+  ["localize", localize],
+  ["localizeAppLayout", localizeAppLayout],
+].forEach((directive) => {
+  const [directiveName, directiveFn] = directive;
+  describe(directiveName, () => {
+    let appLayout;
+
+    before(async () => {
+      appLayout = await fixture(html`
+        <vaadin-app-layout ${directiveFn()}></vaadin-app-layout>
+      `);
     });
-    appLayout = await fixture(html`
-      <vaadin-app-layout ${localizeAppLayout()}></vaadin-app-layout>
-    `);
-  });
 
-  it("should use default i18n values", () => {
-    expect(appLayout.i18n.drawer).to.equal("Drawer");
-  });
+    after(async () => {
+      await localization.setLocale("en");
+    });
 
-  it("should use localized i18n values when changing locale", async () => {
-    await localization.setLocale("de");
+    it("should use default i18n values", () => {
+      expect(appLayout.i18n.drawer).to.equal("Drawer");
+    });
 
-    expect(appLayout.i18n.drawer).to.equal("Menuleiste");
+    it("should use localized i18n values when changing locale", async () => {
+      await localization.setLocale("de");
+
+      expect(appLayout.i18n.drawer).to.equal("Menuleiste");
+    });
   });
 });

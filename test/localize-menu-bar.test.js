@@ -1,36 +1,46 @@
 import { configureLocalization } from "@lit/localize";
 import { html, fixture, expect } from "@open-wc/testing";
 import "@vaadin/menu-bar";
-import { localizeMenuBar } from "../src/directives.js";
+import { localize, localizeMenuBar } from "../src";
 
 const germanLocale = {
   templates: {
-    'vaadin-menu-bar.moreOptions': `Weitere Optionen`,
+    "vaadin-menu-bar.moreOptions": `Weitere Optionen`,
   },
 };
 
-describe("localizeMenuBar", () => {
-  let menuBar;
-  let localization;
+const localization = configureLocalization({
+  sourceLocale: "en",
+  targetLocales: ["de"],
+  loadLocale: () => Promise.resolve(germanLocale),
+});
 
-  before(async () => {
-    localization = configureLocalization({
-      sourceLocale: "en",
-      targetLocales: ["de"],
-      loadLocale: () => Promise.resolve(germanLocale),
+[
+  ["localize", localize],
+  ["localizeMenuBar", localizeMenuBar],
+].forEach((directive) => {
+  const [directiveName, directiveFn] = directive;
+  describe(directiveName, () => {
+    let menuBar;
+
+    before(async () => {
+      menuBar = await fixture(html`
+        <vaadin-menu-bar ${directiveFn()}></vaadin-menu-bar>
+      `);
     });
-    menuBar = await fixture(html`
-      <vaadin-menu-bar ${localizeMenuBar()}></vaadin-menu-bar>
-    `);
-  });
 
-  it("should use default i18n values", () => {
-    expect(menuBar.i18n.moreOptions).to.equal("More options");
-  });
+    after(async () => {
+      await localization.setLocale("en");
+    });
 
-  it("should use localized i18n values when changing locale", async () => {
-    await localization.setLocale("de");
+    it("should use default i18n values", () => {
+      expect(menuBar.i18n.moreOptions).to.equal("More options");
+    });
 
-    expect(menuBar.i18n.moreOptions).to.equal("Weitere Optionen");
+    it("should use localized i18n values when changing locale", async () => {
+      await localization.setLocale("de");
+
+      expect(menuBar.i18n.moreOptions).to.equal("Weitere Optionen");
+    });
   });
 });

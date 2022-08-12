@@ -1,7 +1,7 @@
 import { configureLocalization } from "@lit/localize";
 import { html, fixture, expect } from "@open-wc/testing";
 import "@vaadin/rich-text-editor";
-import { localizeRichTextEditor } from "../src/directives.js";
+import { localize, localizeRichTextEditor } from "../src";
 
 const germanLocale = {
   templates: {
@@ -33,34 +33,44 @@ const germanLocale = {
   },
 };
 
-describe("localizeRichTextEditor", () => {
-  let richTextEditor;
-  let localization;
+const localization = configureLocalization({
+  sourceLocale: "en",
+  targetLocales: ["de"],
+  loadLocale: () => Promise.resolve(germanLocale),
+});
 
-  before(async () => {
-    localization = configureLocalization({
-      sourceLocale: "en",
-      targetLocales: ["de"],
-      loadLocale: () => Promise.resolve(germanLocale),
+[
+  ["localize", localize],
+  ["localizeRichTextEditor", localizeRichTextEditor],
+].forEach((directive) => {
+  const [directiveName, directiveFn] = directive;
+  describe(directiveName, () => {
+    let richTextEditor;
+
+    before(async () => {
+      richTextEditor = await fixture(html`
+        <vaadin-rich-text-editor
+          ${directiveFn()}
+        ></vaadin-rich-text-editor>
+      `);
     });
-    richTextEditor = await fixture(html`
-      <vaadin-rich-text-editor
-        ${localizeRichTextEditor()}
-      ></vaadin-rich-text-editor>
-    `);
-  });
 
-  it("should use default i18n values", () => {
-    expect(richTextEditor.i18n.alignCenter).to.equal("align center");
-    expect(richTextEditor.i18n.strike).to.equal("strike");
-    expect(richTextEditor.i18n.codeBlock).to.equal("code block");
-  });
+    after(async () => {
+      await localization.setLocale("en");
+    });
 
-  it("should use localized i18n values when changing locale", async () => {
-    await localization.setLocale("de");
+    it("should use default i18n values", () => {
+      expect(richTextEditor.i18n.alignCenter).to.equal("align center");
+      expect(richTextEditor.i18n.strike).to.equal("strike");
+      expect(richTextEditor.i18n.codeBlock).to.equal("code block");
+    });
 
-    expect(richTextEditor.i18n.alignCenter).to.equal("Mittig anordnen");
-    expect(richTextEditor.i18n.strike).to.equal("Durchgestrichen");
-    expect(richTextEditor.i18n.codeBlock).to.equal("Code Block");
+    it("should use localized i18n values when changing locale", async () => {
+      await localization.setLocale("de");
+
+      expect(richTextEditor.i18n.alignCenter).to.equal("Mittig anordnen");
+      expect(richTextEditor.i18n.strike).to.equal("Durchgestrichen");
+      expect(richTextEditor.i18n.codeBlock).to.equal("Code Block");
+    });
   });
 });

@@ -1,36 +1,48 @@
 import { configureLocalization } from "@lit/localize";
 import { html, fixture, expect } from "@open-wc/testing";
 import "@vaadin/password-field";
-import { localizePasswordField } from "../src/directives.js";
+import { localize, localizePasswordField } from "../src";
 
 const germanLocale = {
   templates: {
-    'vaadin-password-field.reveal': `Passwort anzeigen`,
+    "vaadin-password-field.reveal": `Passwort anzeigen`,
   },
 };
 
-describe("localizePasswordField", () => {
-  let passwordField;
-  let localization;
+const localization = configureLocalization({
+  sourceLocale: "en",
+  targetLocales: ["de"],
+  loadLocale: () => Promise.resolve(germanLocale),
+});
 
-  before(async () => {
-    localization = configureLocalization({
-      sourceLocale: "en",
-      targetLocales: ["de"],
-      loadLocale: () => Promise.resolve(germanLocale),
+[
+  ["localize", localize],
+  ["localizePasswordField", localizePasswordField],
+].forEach((directive) => {
+  const [directiveName, directiveFn] = directive;
+  describe(directiveName, () => {
+    let passwordField;
+
+    before(async () => {
+      passwordField = await fixture(html`
+        <vaadin-password-field
+          ${directiveFn()}
+        ></vaadin-password-field>
+      `);
     });
-    passwordField = await fixture(html`
-      <vaadin-password-field ${localizePasswordField()}></vaadin-password-field>
-    `);
-  });
 
-  it("should use default i18n values", () => {
-    expect(passwordField.i18n.reveal).to.equal("Show password");
-  });
+    after(async () => {
+      await localization.setLocale("en");
+    });
 
-  it("should use localized i18n values when changing locale", async () => {
-    await localization.setLocale("de");
+    it("should use default i18n values", () => {
+      expect(passwordField.i18n.reveal).to.equal("Show password");
+    });
 
-    expect(passwordField.i18n.reveal).to.equal("Passwort anzeigen");
+    it("should use localized i18n values when changing locale", async () => {
+      await localization.setLocale("de");
+
+      expect(passwordField.i18n.reveal).to.equal("Passwort anzeigen");
+    });
   });
 });

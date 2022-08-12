@@ -13,20 +13,7 @@ import "@vaadin/select";
 import "@vaadin/upload";
 import { render, html, LitElement } from "lit";
 import { configureLocalization } from "@lit/localize";
-import {
-  localizeAvatar,
-  localizeAvatarGroup,
-  localizeCrud,
-  localizeDatePicker,
-  localizeDateTimePicker,
-  localizeLogin,
-  localizeMenuBar,
-  localizeMessageInput,
-  localizeMultiSelectComboBox,
-  localizePasswordField,
-  localizeRichTextEditor,
-  localizeUpload,
-} from "../src/directives";
+import { localize } from "../src";
 import {
   sourceLocale,
   targetLocales,
@@ -70,15 +57,15 @@ class VaadinLitLocalizeDemo extends LitElement {
       ></vaadin-select>
       <br />
       <br />
-      <vaadin-avatar ${localizeAvatar()}></vaadin-avatar>
+      <vaadin-avatar ${localize()}></vaadin-avatar>
       <br />
       <vaadin-avatar-group
         .items=${[{}, {}, {}]}
-        ${localizeAvatarGroup()}
+        ${localize()}
       ></vaadin-avatar-group>
       <br />
       <vaadin-crud
-        ${localizeCrud()}
+        ${localize()}
         .items=${[
           { name: "Jane", email: "jane@example.com" },
           { name: "John", email: "john@example.com" },
@@ -88,17 +75,17 @@ class VaadinLitLocalizeDemo extends LitElement {
       <br />
       <vaadin-date-picker
         label="Localized Date Picker"
-        ${localizeDatePicker()}
+        ${localize()}
       ></vaadin-date-picker>
       <vaadin-date-time-picker
         label="Localized Date Time Picker"
-        ${localizeDateTimePicker()}
+        ${localize()}
       ></vaadin-date-time-picker>
       <br />
-      <vaadin-login-form ${localizeLogin()}></vaadin-login-form>
+      <vaadin-login-form ${localize()}></vaadin-login-form>
       <br />
       <vaadin-menu-bar
-        ${localizeMenuBar()}
+        ${localize()}
         .items="${[
           { text: "Item 1" },
           { text: "Item 2" },
@@ -108,19 +95,21 @@ class VaadinLitLocalizeDemo extends LitElement {
         style="width: 300px"
       ></vaadin-menu-bar>
       <br />
-      <vaadin-message-input ${localizeMessageInput()}></vaadin-message-input>
+      <vaadin-message-input ${localize()}></vaadin-message-input>
       <br />
       <vaadin-multi-select-combo-box
-        ${localizeMultiSelectComboBox()}
+        ${localize()}
         .items=${["Item 1", "Item 2", "Item 3"]}
         .selected-items=${["Item 1", "Item 2"]}
       ></vaadin-multi-select-combo-box>
       <br />
-      <vaadin-password-field ${localizePasswordField()}></vaadin-password-field>
+      <vaadin-password-field ${localize()}></vaadin-password-field>
       <br />
-      <vaadin-rich-text-editor ${localizeRichTextEditor()}></vaadin-rich-text-editor>
+      <vaadin-rich-text-editor
+        ${localize()}
+      ></vaadin-rich-text-editor>
       <br />
-      <vaadin-upload ${localizeUpload()} no-auto max-files="3"></vaadin-upload>
+      <vaadin-upload ${localize()} no-auto max-files="3"></vaadin-upload>
     `;
   }
 }
