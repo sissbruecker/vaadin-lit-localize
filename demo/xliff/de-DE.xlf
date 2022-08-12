@@ -26,6 +26,62 @@
   <source>{user} left</source>
   <target>{user} has die Sitzung verlassen</target>
 </trans-unit>
+<trans-unit id="vaadin-crud.newItem">
+  <source>New item</source>
+  <target>Neu</target>
+</trans-unit>
+<trans-unit id="vaadin-crud.editItem">
+  <source>Edit item</source>
+  <target>Bearbeiten</target>
+</trans-unit>
+<trans-unit id="vaadin-crud.saveItem">
+  <source>Save</source>
+  <target>Speichern</target>
+</trans-unit>
+<trans-unit id="vaadin-crud.cancel">
+  <source>Cancel</source>
+  <target>Abbrechen</target>
+</trans-unit>
+<trans-unit id="vaadin-crud.deleteItem">
+  <source>Delete...</source>
+  <target>Löschen...</target>
+</trans-unit>
+<trans-unit id="vaadin-crud.editLabel">
+  <source>Edit</source>
+  <target>Editieren</target>
+</trans-unit>
+<trans-unit id="vaadin-crud.confirm.delete.title">
+  <source>Delete item</source>
+  <target>Eintrag löschen</target>
+</trans-unit>
+<trans-unit id="vaadin-crud.confirm.delete.content">
+  <source>Are you sure you want to delete this item? This action cannot be undone.</source>
+  <target>Bist du sicher das du den Eintrag löschen willst?</target>
+</trans-unit>
+<trans-unit id="vaadin-crud.confirm.delete.button.confirm">
+  <source>Delete</source>
+  <target>Löschen</target>
+</trans-unit>
+<trans-unit id="vaadin-crud.confirm.delete.button.dismiss">
+  <source>Cancel</source>
+  <target>Abbrechen</target>
+</trans-unit>
+<trans-unit id="vaadin-crud.confirm.cancel.title">
+  <source>Discard changes</source>
+  <target>Änderungen verwerfen</target>
+</trans-unit>
+<trans-unit id="vaadin-crud.confirm.cancel.content">
+  <source>There are unsaved changes to this item.</source>
+  <target>Es gibt nicht gespeicherte Änderungen.</target>
+</trans-unit>
+<trans-unit id="vaadin-crud.confirm.cancel.button.confirm">
+  <source>Discard</source>
+  <target>Verwerfen</target>
+</trans-unit>
+<trans-unit id="vaadin-crud.confirm.cancel.button.dismiss">
+  <source>Cancel</source>
+  <target>Abbrechen</target>
+</trans-unit>
 <trans-unit id="vaadin-date-picker.monthNames.0">
   <source>January</source>
   <target>Januar</target>

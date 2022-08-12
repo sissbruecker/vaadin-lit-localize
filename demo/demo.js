@@ -1,5 +1,6 @@
 import "@vaadin/avatar";
 import "@vaadin/avatar-group";
+import "@vaadin/crud";
 import "@vaadin/date-picker";
 import "@vaadin/select";
 import "@vaadin/login/vaadin-login-form.js";
@@ -9,6 +10,7 @@ import { configureLocalization } from "@lit/localize";
 import {
   localizeAvatar,
   localizeAvatarGroup,
+  localizeCrud,
   localizeDatePicker,
   localizeLogin,
   localizeUpload,
@@ -62,6 +64,15 @@ class VaadinLitLocalizeDemo extends LitElement {
         .items=${[{}, {}, {}]}
         ${localizeAvatarGroup()}
       ></vaadin-avatar-group>
+      <br />
+      <vaadin-crud
+        ${localizeCrud()}
+        .items=${[
+          { name: "Jane", email: "jane@example.com" },
+          { name: "John", email: "john@example.com" },
+        ]}
+      >
+      </vaadin-crud>
       <br />
       <vaadin-date-picker
         label="Localized Date Picker"

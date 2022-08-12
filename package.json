@@ -18,6 +18,7 @@
     "@open-wc/testing": "^3.1.6",
     "@vaadin/avatar": "^23.1.4",
     "@vaadin/avatar-group": "^23.1.4",
+    "@vaadin/crud": "^23.1.4",
     "@vaadin/date-picker": "^23.1.4",
     "@vaadin/login": "^23.1.4",
     "@vaadin/select": "^23.1.4",

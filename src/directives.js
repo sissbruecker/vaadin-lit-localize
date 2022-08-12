@@ -28,6 +28,39 @@ export class AvatarGroupDirective extends LocalizeDirective {
 
 export const localizeAvatarGroup = directive(AvatarGroupDirective);
 
+export class CrudDirective extends LocalizeDirective {
+  getLocalization() {
+    return {
+  newItem: msg('New item', { id: 'vaadin-crud.newItem' }),
+  editItem: msg('Edit item', { id: 'vaadin-crud.editItem' }),
+  saveItem: msg('Save', { id: 'vaadin-crud.saveItem' }),
+  cancel: msg('Cancel', { id: 'vaadin-crud.cancel' }),
+  deleteItem: msg('Delete...', { id: 'vaadin-crud.deleteItem' }),
+  editLabel: msg('Edit', { id: 'vaadin-crud.editLabel' }),
+  confirm: {
+    delete: {
+      title: msg('Delete item', { id: 'vaadin-crud.confirm.delete.title' }),
+      content: msg('Are you sure you want to delete this item? This action cannot be undone.', { id: 'vaadin-crud.confirm.delete.content' }),
+      button: {
+        confirm: msg('Delete', { id: 'vaadin-crud.confirm.delete.button.confirm' }),
+        dismiss: msg('Cancel', { id: 'vaadin-crud.confirm.delete.button.dismiss' })
+      }
+    },
+    cancel: {
+      title: msg('Discard changes', { id: 'vaadin-crud.confirm.cancel.title' }),
+      content: msg('There are unsaved changes to this item.', { id: 'vaadin-crud.confirm.cancel.content' }),
+      button: {
+        confirm: msg('Discard', { id: 'vaadin-crud.confirm.cancel.button.confirm' }),
+        dismiss: msg('Cancel', { id: 'vaadin-crud.confirm.cancel.button.dismiss' })
+      }
+    }
+  }
+}
+  }
+}
+
+export const localizeCrud = directive(CrudDirective);
+
 export class DatePickerDirective extends LocalizeDirective {
   getLocalization() {
     return {

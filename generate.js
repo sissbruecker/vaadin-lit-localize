@@ -81,6 +81,11 @@ function run() {
       prefix: "vaadin-avatar-group",
     },
     {
+      name: "localizeCrud",
+      component: "Crud",
+      prefix: "vaadin-crud",
+    },
+    {
       name: "localizeDatePicker",
       component: "DatePicker",
       prefix: "vaadin-date-picker",
