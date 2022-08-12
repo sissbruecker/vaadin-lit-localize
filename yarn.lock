@@ -539,6 +539,22 @@
     "@vaadin/vaadin-overlay" "^23.1.5"
     "@vaadin/vaadin-themable-mixin" "^23.1.5"
 
+"@vaadin/context-menu@^23.1.5":
+  version "23.1.5"
+  resolved "https://registry.yarnpkg.com/@vaadin/context-menu/-/context-menu-23.1.5.tgz#893d5f94de96995886b1eeb4154df6ed68db65ed"
+  integrity sha512-lCIgER1umfQ7K2Sr2pc1BmRvnNhv2wEatx/vFdlyYc2/PCvzS+8CjvfpS3U4m6KOCEV25JvojU+FtQRmUsm+zw==
+  dependencies:
+    "@open-wc/dedupe-mixin" "^1.3.0"
+    "@polymer/polymer" "^3.0.0"
+    "@vaadin/component-base" "^23.1.5"
+    "@vaadin/item" "^23.1.5"
+    "@vaadin/list-box" "^23.1.5"
+    "@vaadin/lit-renderer" "^23.1.5"
+    "@vaadin/vaadin-lumo-styles" "^23.1.5"
+    "@vaadin/vaadin-material-styles" "^23.1.5"
+    "@vaadin/vaadin-overlay" "^23.1.5"
+    "@vaadin/vaadin-themable-mixin" "^23.1.5"
+
 "@vaadin/crud@^23.1.4":
   version "23.1.5"
   resolved "https://registry.yarnpkg.com/@vaadin/crud/-/crud-23.1.5.tgz#ae5af08e951bf23057be8b8f925963956e532e44"
@@ -694,6 +710,20 @@
     "@vaadin/vaadin-overlay" "^23.1.5"
     "@vaadin/vaadin-themable-mixin" "^23.1.5"
 
+"@vaadin/menu-bar@^23.1.4":
+  version "23.1.5"
+  resolved "https://registry.yarnpkg.com/@vaadin/menu-bar/-/menu-bar-23.1.5.tgz#971bfff93d6eb72265daa73b8aa972e44ef03f0c"
+  integrity sha512-cOFekx0arxdUYDnHTCzo0SNNQbdkDZ4z8hr6WsdaX37dotipbBC4hrDaCE8iTyah/D5kuvjIquVAZhUneSD9RA==
+  dependencies:
+    "@open-wc/dedupe-mixin" "^1.3.0"
+    "@polymer/polymer" "^3.0.0"
+    "@vaadin/button" "^23.1.5"
+    "@vaadin/component-base" "^23.1.5"
+    "@vaadin/vaadin-context-menu" "^23.1.5"
+    "@vaadin/vaadin-lumo-styles" "^23.1.5"
+    "@vaadin/vaadin-material-styles" "^23.1.5"
+    "@vaadin/vaadin-themable-mixin" "^23.1.5"
+
 "@vaadin/password-field@^23.1.5":
   version "23.1.5"
   resolved "https://registry.yarnpkg.com/@vaadin/password-field/-/password-field-23.1.5.tgz#ce13fe8d8fad56fd6bea8489dffc36669d550660"
@@ -761,6 +791,13 @@
     "@vaadin/vaadin-lumo-styles" "^23.1.5"
     "@vaadin/vaadin-material-styles" "^23.1.5"
     "@vaadin/vaadin-themable-mixin" "^23.1.5"
+
+"@vaadin/vaadin-context-menu@^23.1.5":
+  version "23.1.5"
+  resolved "https://registry.yarnpkg.com/@vaadin/vaadin-context-menu/-/vaadin-context-menu-23.1.5.tgz#0992c570e054fbdcda598bda9db1a39b3c61d443"
+  integrity sha512-qiRqWKz8QTE/omHYpjfjBpts+uquC1hDw9zBIRxfe/jg+ROWd+fHih5QMCFUWRbx+nJqlcmmQvOlHkr10V7dMg==
+  dependencies:
+    "@vaadin/context-menu" "^23.1.5"
 
 "@vaadin/vaadin-development-mode-detector@^2.0.0":
   version "2.0.5"

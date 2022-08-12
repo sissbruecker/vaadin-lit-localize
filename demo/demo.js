@@ -2,8 +2,9 @@ import "@vaadin/avatar";
 import "@vaadin/avatar-group";
 import "@vaadin/crud";
 import "@vaadin/date-picker";
-import "@vaadin/select";
 import "@vaadin/login/vaadin-login-form.js";
+import "@vaadin/menu-bar";
+import "@vaadin/select";
 import "@vaadin/upload";
 import { render, html, LitElement } from "lit";
 import { configureLocalization } from "@lit/localize";
@@ -13,6 +14,7 @@ import {
   localizeCrud,
   localizeDatePicker,
   localizeLogin,
+  localizeMenuBar,
   localizeUpload,
 } from "../src/directives";
 import {
@@ -80,6 +82,17 @@ class VaadinLitLocalizeDemo extends LitElement {
       ></vaadin-date-picker>
       <br />
       <vaadin-login-form ${localizeLogin()}></vaadin-login-form>
+      <br />
+      <vaadin-menu-bar
+        ${localizeMenuBar()}
+        .items="${[
+          { text: "Item 1" },
+          { text: "Item 2" },
+          { text: "Item 3" },
+          { text: "Item 4" },
+        ]}"
+        style="width: 300px"
+      ></vaadin-menu-bar>
       <br />
       <vaadin-upload ${localizeUpload()} no-auto max-files="3"></vaadin-upload>
     `;

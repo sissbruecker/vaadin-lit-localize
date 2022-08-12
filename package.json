@@ -22,6 +22,7 @@
     "@vaadin/crud": "^23.1.4",
     "@vaadin/date-picker": "^23.1.4",
     "@vaadin/login": "^23.1.4",
+    "@vaadin/menu-bar": "^23.1.4",
     "@vaadin/select": "^23.1.4",
     "@vaadin/upload": "^23.1.4",
     "@web/dev-server": "^0.1.32",

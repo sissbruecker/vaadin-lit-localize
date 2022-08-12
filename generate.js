@@ -101,6 +101,11 @@ function run() {
       prefix: "vaadin-login",
     },
     {
+      name: "localizeMenuBar",
+      component: "MenuBar",
+      prefix: "vaadin-menu-bar",
+    },
+    {
       name: "localizeUpload",
       component: "Upload",
       prefix: "vaadin-upload",

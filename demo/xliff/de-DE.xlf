@@ -234,6 +234,10 @@
   <source>Check that you have entered the correct username and password and try again.</source>
   <target>Bitte prüfe ob Du den Benutzernamen oder das Passwort korrekt eingegeben hast</target>
 </trans-unit>
+<trans-unit id="vaadin-menu-bar.moreOptions">
+  <source>More options</source>
+  <target>Weitere Optionen</target>
+</trans-unit>
 <trans-unit id="vaadin-upload.dropFiles.one">
   <source>Drop file here</source>
   <target>Datei hierher ziehen</target>

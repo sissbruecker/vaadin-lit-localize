@@ -136,6 +136,16 @@ export class LoginFormDirective extends LocalizeDirective {
 
 export const localizeLogin = directive(LoginFormDirective);
 
+export class MenuBarDirective extends LocalizeDirective {
+  getLocalization() {
+    return {
+  moreOptions: msg('More options', { id: 'vaadin-menu-bar.moreOptions' })
+}
+  }
+}
+
+export const localizeMenuBar = directive(MenuBarDirective);
+
 export class UploadDirective extends LocalizeDirective {
   getLocalization() {
     return {
