@@ -448,6 +448,20 @@
   dependencies:
     "@types/node" "*"
 
+"@vaadin/avatar@23.1.4":
+  version "23.1.4"
+  resolved "https://registry.yarnpkg.com/@vaadin/avatar/-/avatar-23.1.4.tgz#74bacac4915f2d910a8f9eaa3bb828f1fc0bca61"
+  integrity sha512-MXngAkC2HFG3Svzrsh5tcGM9KCdv7UBEgzsoHHPFf4v740u20IrsVUWeApQc3Ke+4F6tu6Cea4dtHp5GGnT9Eg==
+  dependencies:
+    "@polymer/polymer" "^3.0.0"
+    "@vaadin/component-base" "^23.1.4"
+    "@vaadin/item" "^23.1.4"
+    "@vaadin/list-box" "^23.1.4"
+    "@vaadin/vaadin-lumo-styles" "^23.1.4"
+    "@vaadin/vaadin-material-styles" "^23.1.4"
+    "@vaadin/vaadin-overlay" "^23.1.4"
+    "@vaadin/vaadin-themable-mixin" "^23.1.4"
+
 "@vaadin/button@^23.1.4":
   version "23.1.4"
   resolved "https://registry.npmjs.org/@vaadin/button/-/button-23.1.4.tgz"

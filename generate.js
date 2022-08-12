@@ -69,6 +69,11 @@ export const ${directiveName} = directive(${componentClass}Directive);
 function run() {
   const directives = [
     {
+      name: "localizeAvatar",
+      component: "Avatar",
+      prefix: "vaadin-avatar",
+    },
+    {
       name: "localizeDatePicker",
       component: "DatePicker",
       prefix: "vaadin-date-picker",

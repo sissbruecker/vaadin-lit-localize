@@ -2,6 +2,16 @@ import { msg } from '@lit/localize';
 import { directive } from 'lit/directive.js';
 import { LocalizeDirective } from './localize-directive.js';
 
+export class AvatarDirective extends LocalizeDirective {
+  getLocalization() {
+    return {
+  anonymous: msg('anonymous', { id: 'vaadin-avatar.anonymous' })
+}
+  }
+}
+
+export const localizeAvatar = directive(AvatarDirective);
+
 export class DatePickerDirective extends LocalizeDirective {
   getLocalization() {
     return {

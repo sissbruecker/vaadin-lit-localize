@@ -1,3 +1,4 @@
+import "@vaadin/avatar";
 import "@vaadin/date-picker";
 import "@vaadin/select";
 import "@vaadin/login/vaadin-login-form.js";
@@ -5,6 +6,7 @@ import "@vaadin/upload";
 import { render, html, LitElement } from "lit";
 import { configureLocalization } from "@lit/localize";
 import {
+  localizeAvatar,
   localizeDatePicker,
   localizeLogin,
   localizeUpload,
@@ -51,6 +53,10 @@ class VaadinLitLocalizeDemo extends LitElement {
         @value-changed="${this.handleChangeLocale}"
       ></vaadin-select>
       <br />
+      <br />
+      <vaadin-avatar
+        ${localizeAvatar()}
+      ></vaadin-avatar>
       <br />
       <vaadin-date-picker
         label="Localized Date Picker"

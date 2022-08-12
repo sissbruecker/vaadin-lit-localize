@@ -2,6 +2,10 @@
 <xliff version="1.2" xmlns="urn:oasis:names:tc:xliff:document:1.2">
 <file target-language="de-DE" source-language="en" original="lit-localize-inputs" datatype="plaintext">
 <body>
+<trans-unit id="vaadin-avatar.anonymous">
+  <source>anonymous</source>
+  <target>Anonym</target>
+</trans-unit>
 <trans-unit id="vaadin-date-picker.monthNames.0">
   <source>January</source>
   <target>Januar</target>
